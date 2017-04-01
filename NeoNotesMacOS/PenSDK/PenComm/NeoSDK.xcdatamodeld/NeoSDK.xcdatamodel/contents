@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15D21" minimumToolsVersion="Xcode 7.0">
+    <entity name="NPNotebookInfoEntity" representedClassName="NPNotebookInfoEntity" syncable="YES">
+        <attribute name="datePublished" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="keyName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="noPages" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="pdfPageReferType" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="paperInfo" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="NPPaperInfoEntity" inverseName="notebookInfo" inverseEntity="NPPaperInfoEntity" syncable="YES"/>
+    </entity>
+    <entity name="NPPaperInfoEntity" representedClassName="NPPaperInfoEntity" syncable="YES">
+        <attribute name="height" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="pageNum" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="startX" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="startY" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="width" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="notebookInfo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="NPNotebookInfoEntity" inverseName="paperInfo" inverseEntity="NPNotebookInfoEntity" syncable="YES"/>
+        <relationship name="puiInfo" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="NPPUIInfoEntity" inverseName="paperInfo" inverseEntity="NPPUIInfoEntity" syncable="YES"/>
+    </entity>
+    <entity name="NPPUIInfoEntity" representedClassName="NPPUIInfoEntity" syncable="YES">
+        <attribute name="cmd" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="extraInfo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="height" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="shape" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="startX" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="startY" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="width" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="paperInfo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="NPPaperInfoEntity" inverseName="puiInfo" inverseEntity="NPPaperInfoEntity" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="NPNotebookInfoEntity" positionX="-13034" positionY="-4090" width="128" height="150"/>
+        <element name="NPPaperInfoEntity" positionX="-12762" positionY="-4099" width="128" height="150"/>
+        <element name="NPPUIInfoEntity" positionX="-12485" positionY="-3906" width="128" height="165"/>
+    </elements>
+</model>

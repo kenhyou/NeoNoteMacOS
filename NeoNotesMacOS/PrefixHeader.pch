@@ -1,0 +1,36 @@
+//
+//  PrefixHeader.pch
+//  NeoNotes
+//
+//  Created by Sang Nam on 11/25/14.
+//  Copyright (c) 2014 Neolabconvergence. All rights reserved.
+//
+
+#ifndef NeoNotes_PrefixHeader_pch
+#define NeoNotes_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <Availability.h>
+
+#ifdef __OBJC__
+#import <AppKit/AppKit.h>
+#import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
+
+#import "configure.h"
+#import "NJPenCommManager.h"
+#import "NJUtilities.h"
+//#import "NJLock.h"
+//#import "NJPenRegisterViewController.h"
+
+
+#import "NJNotebookWriterManager.h"
+#import "NJNotebookReaderManager.h"
+#import "NJSettingStore.h"
+
+//#import "GAI.h"
+//#import "GAIFields.h"
+#endif
+#endif

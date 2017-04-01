@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6751" systemVersion="14D131" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="NJPageEntity" syncable="YES">
+        <attribute name="notebookUuid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pageNum" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="pageText" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="tags" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="NJTagEntity" inverseName="pageInfo" inverseEntity="NJTagEntity" syncable="YES"/>
+    </entity>
+    <entity name="NJTagEntity" syncable="YES">
+        <attribute name="dateCreated" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="tagName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="pageInfo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="NJPageEntity" inverseName="tags" inverseEntity="NJPageEntity" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="NJPageEntity" positionX="-63" positionY="-18" width="128" height="105"/>
+        <element name="NJTagEntity" positionX="358" positionY="146" width="128" height="88"/>
+    </elements>
+</model>

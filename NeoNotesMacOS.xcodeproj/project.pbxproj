@@ -1,0 +1,952 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE00077D1DCF5A5300B14A31 /* NPNotebookInfoEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = BE00077C1DCF5A5300B14A31 /* NPNotebookInfoEntity.m */; };
+		BE0007821DCF5A8000B14A31 /* NPPaperInfoEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = BE00077F1DCF5A8000B14A31 /* NPPaperInfoEntity.m */; };
+		BE0007831DCF5A8000B14A31 /* NPPUIInfoEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0007811DCF5A8000B14A31 /* NPPUIInfoEntity.m */; };
+		BE0D472F1DD6993700C743D2 /* NJOnlineWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0D472D1DD6993700C743D2 /* NJOnlineWindowController.m */; };
+		BE0D473B1DD6A34900C743D2 /* NJOnlinePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0D473A1DD6A34900C743D2 /* NJOnlinePageViewController.m */; };
+		BE17FC7E1DB799E200DBF22B /* NeoSDK.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BE17FC7C1DB799E200DBF22B /* NeoSDK.xcdatamodeld */; };
+		BE1C960A1DB4F22D00499E56 /* NJNotebookIdStore.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1C96091DB4F22D00499E56 /* NJNotebookIdStore.m */; };
+		BE1C960E1DB4F2D900499E56 /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1C960D1DB4F2D900499E56 /* KeychainItemWrapper.m */; };
+		BE1C96121DB4F32900499E56 /* FileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1C96111DB4F32900499E56 /* FileLogger.m */; };
+		BE1C96161DB4F39300499E56 /* NJUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1C96151DB4F39300499E56 /* NJUtilities.m */; };
+		BE1C961D1DB4F48B00499E56 /* NJNotebookManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1C96181DB4F48B00499E56 /* NJNotebookManager.m */; };
+		BE1C961E1DB4F48B00499E56 /* NJNotebookReaderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1C961A1DB4F48B00499E56 /* NJNotebookReaderManager.m */; };
+		BE1C961F1DB4F48B00499E56 /* NJNotebookWriterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1C961C1DB4F48B00499E56 /* NJNotebookWriterManager.m */; };
+		BE1C96221DB4F49A00499E56 /* NJVoiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1C96211DB4F49A00499E56 /* NJVoiceManager.m */; };
+		BE1C96261DB4F53500499E56 /* NJNotebookInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1C96251DB4F53500499E56 /* NJNotebookInfo.m */; };
+		BE1C96291DB4F56000499E56 /* NJCoverManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1C96281DB4F56000499E56 /* NJCoverManager.m */; };
+		BE1C962F1DB4FA6500499E56 /* NJNotebookInfoStore.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1C962E1DB4FA6500499E56 /* NJNotebookInfoStore.m */; };
+		BE1C96321DB4FC5800499E56 /* NJXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1C96311DB4FC5800499E56 /* NJXMLParser.m */; };
+		BE1C96351DB4FC8500499E56 /* NJNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1C96341DB4FC8500499E56 /* NJNetworkManager.m */; };
+		BE1C96381DB4FDDD00499E56 /* NJSettingStore.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1C96371DB4FDDD00499E56 /* NJSettingStore.m */; };
+		BE2283DD1DC4D55A00780ACA /* PDFPageConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2283DA1DC4D55A00780ACA /* PDFPageConverter.m */; };
+		BE2283DE1DC4D55A00780ACA /* PDFPageRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2283DC1DC4D55A00780ACA /* PDFPageRenderer.m */; };
+		BE36F8771DCE08C50055B6AA /* NSWindow+NJAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BE36F8761DCE08C50055B6AA /* NSWindow+NJAdditions.m */; };
+		BE36F87C1DCE0AC20055B6AA /* NSBezierPath+MCAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BE36F8791DCE0AC20055B6AA /* NSBezierPath+MCAdditions.m */; };
+		BE36F87D1DCE0AC20055B6AA /* NSBezierPath+PXRoundedRectangleAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BE36F87B1DCE0AC20055B6AA /* NSBezierPath+PXRoundedRectangleAdditions.m */; };
+		BE6657D41DD0AE7F00C26277 /* NJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6657D31DD0AE7F00C26277 /* NJViewController.m */; };
+		BE6BBAC81DFB82BE00467DF9 /* NJOnlinePageDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6BBAC71DFB82BE00467DF9 /* NJOnlinePageDrawView.m */; };
+		BE6BBACC1DFB83A900467DF9 /* NJPageZoomView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6BBACB1DFB83A900467DF9 /* NJPageZoomView.m */; };
+		BE814C111DB65DB9007F20BB /* NPNotebookInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = BE814C101DB65DB9007F20BB /* NPNotebookInfo.m */; };
+		BE814C161DB65E05007F20BB /* NPPaperInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = BE814C131DB65E05007F20BB /* NPPaperInfo.m */; };
+		BE814C171DB65E05007F20BB /* NPPUIInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = BE814C151DB65E05007F20BB /* NPPUIInfo.m */; };
+		BE814C251DB66CFE007F20BB /* NSBezierPath+BezierPathQuartzUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = BE814C241DB66CFE007F20BB /* NSBezierPath+BezierPathQuartzUtilities.m */; };
+		BE84CCDD1E10CA5700BDC340 /* NJGlobalFunctionsView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE84CCDC1E10CA5700BDC340 /* NJGlobalFunctionsView.m */; };
+		BE84CCE01E10CB7200BDC340 /* NJGlobalFunctionsTable.m in Sources */ = {isa = PBXBuildFile; fileRef = BE84CCDF1E10CB7200BDC340 /* NJGlobalFunctionsTable.m */; };
+		BE84CCE41E10EEEF00BDC340 /* NJCoreDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = BE84CCE31E10EEEF00BDC340 /* NJCoreDataStore.m */; };
+		BE84CCEB1E10F03C00BDC340 /* NJPageEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = BE84CCE81E10F03C00BDC340 /* NJPageEntity.m */; };
+		BE84CCEC1E10F03C00BDC340 /* NJPageEntity+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = BE84CCEA1E10F03C00BDC340 /* NJPageEntity+CoreDataProperties.m */; };
+		BE84CCF11E10F05600BDC340 /* NJTagEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = BE84CCEE1E10F05600BDC340 /* NJTagEntity.m */; };
+		BE84CCF21E10F05600BDC340 /* NJTagEntity+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = BE84CCF01E10F05600BDC340 /* NJTagEntity+CoreDataProperties.m */; };
+		BE84CCF71E10F07200BDC340 /* NJTranscribeEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = BE84CCF41E10F07200BDC340 /* NJTranscribeEntity.m */; };
+		BE84CCF81E10F07200BDC340 /* NJTranscribeEntity+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = BE84CCF61E10F07200BDC340 /* NJTranscribeEntity+CoreDataProperties.m */; };
+		BE84CCFB1E10F0A900BDC340 /* NJTagXML.m in Sources */ = {isa = PBXBuildFile; fileRef = BE84CCFA1E10F0A900BDC340 /* NJTagXML.m */; };
+		BE84CCFE1E10F34E00BDC340 /* NJMigrationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE84CCFD1E10F34E00BDC340 /* NJMigrationManager.m */; };
+		BE84CD021E11065300BDC340 /* NeoNotes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BE84CCFF1E11065300BDC340 /* NeoNotes.xcdatamodeld */; };
+		BE861B1C1DC5C06B00B09747 /* NSImage+saveAsJpegWithName.m in Sources */ = {isa = PBXBuildFile; fileRef = BE861B1B1DC5C06B00B09747 /* NSImage+saveAsJpegWithName.m */; };
+		BE86691E1E8A847A0090264B /* note_support_list.plist in Resources */ = {isa = PBXBuildFile; fileRef = BE86691D1E8A847A0090264B /* note_support_list.plist */; };
+		BE9011DC1DF262A000F2CDC0 /* NJZoomView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9011DA1DF262A000F2CDC0 /* NJZoomView.m */; };
+		BE9011DF1DF2634600F2CDC0 /* NSColor+NJAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9011DE1DF2634600F2CDC0 /* NSColor+NJAdditions.m */; };
+		BE912E241DB3960900E4B900 /* NJAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE912E231DB3960900E4B900 /* NJAppDelegate.m */; };
+		BE912E271DB3960900E4B900 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE912E261DB3960900E4B900 /* main.m */; };
+		BE912E2C1DB3960900E4B900 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE912E2B1DB3960900E4B900 /* Assets.xcassets */; };
+		BE912E2F1DB3960900E4B900 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE912E2D1DB3960900E4B900 /* Main.storyboard */; };
+		BE912E401DB39BC800E4B900 /* NJPenCommManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE912E3D1DB39BC800E4B900 /* NJPenCommManager.m */; };
+		BE912E411DB39BC800E4B900 /* NJPenCommParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BE912E3F1DB39BC800E4B900 /* NJPenCommParser.m */; };
+		BE912E501DB39C0C00E4B900 /* NJMedia.m in Sources */ = {isa = PBXBuildFile; fileRef = BE912E431DB39C0C00E4B900 /* NJMedia.m */; };
+		BE912E511DB39C0C00E4B900 /* NJNode.m in Sources */ = {isa = PBXBuildFile; fileRef = BE912E451DB39C0C00E4B900 /* NJNode.m */; };
+		BE912E521DB39C0C00E4B900 /* NJPage.m in Sources */ = {isa = PBXBuildFile; fileRef = BE912E471DB39C0C00E4B900 /* NJPage.m */; };
+		BE912E531DB39C0C00E4B900 /* NJRDPFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = BE912E491DB39C0C00E4B900 /* NJRDPFilter.m */; };
+		BE912E541DB39C0C00E4B900 /* NJStroke.m in Sources */ = {isa = PBXBuildFile; fileRef = BE912E4B1DB39C0C00E4B900 /* NJStroke.m */; };
+		BE912E551DB39C0C00E4B900 /* NJTransformation.m in Sources */ = {isa = PBXBuildFile; fileRef = BE912E4D1DB39C0C00E4B900 /* NJTransformation.m */; };
+		BE912E561DB39C0C00E4B900 /* NJVoiceMemo.m in Sources */ = {isa = PBXBuildFile; fileRef = BE912E4F1DB39C0C00E4B900 /* NJVoiceMemo.m */; };
+		BE912E5C1DB39FB900E4B900 /* NJNotebookPaperInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = BE912E5B1DB39FB900E4B900 /* NJNotebookPaperInfo.m */; };
+		BE912E5F1DB3A01600E4B900 /* NPPaperManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE912E5E1DB3A01600E4B900 /* NPPaperManager.m */; };
+		BE912E621DB3A0DC00E4B900 /* NJPageDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = BE912E611DB3A0DC00E4B900 /* NJPageDocument.m */; };
+		BEBBCB5A1E1A2A0F000A9C42 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEBBCB591E1A2A0F000A9C42 /* WebKit.framework */; };
+		BEBBCB631E1A4634000A9C42 /* NJExportNotebookEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = BEBBCB621E1A4634000A9C42 /* NJExportNotebookEntry.m */; };
+		E4454B434723DEC11D47B663 /* libPods-NeoNotesMacOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2390576452B867B0D5E0B5C3 /* libPods-NeoNotesMacOS.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2390576452B867B0D5E0B5C3 /* libPods-NeoNotesMacOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NeoNotesMacOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C4B1093132018F100C8E7B6 /* Pods-NeoNotesMacOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeoNotesMacOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-NeoNotesMacOS/Pods-NeoNotesMacOS.release.xcconfig"; sourceTree = "<group>"; };
+		BE00077B1DCF5A5300B14A31 /* NPNotebookInfoEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NPNotebookInfoEntity.h; path = PenSDK/PenComm/NPNotebookInfoEntity.h; sourceTree = "<group>"; };
+		BE00077C1DCF5A5300B14A31 /* NPNotebookInfoEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NPNotebookInfoEntity.m; path = PenSDK/PenComm/NPNotebookInfoEntity.m; sourceTree = "<group>"; };
+		BE00077E1DCF5A8000B14A31 /* NPPaperInfoEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NPPaperInfoEntity.h; path = PenSDK/PenComm/NPPaperInfoEntity.h; sourceTree = "<group>"; };
+		BE00077F1DCF5A8000B14A31 /* NPPaperInfoEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NPPaperInfoEntity.m; path = PenSDK/PenComm/NPPaperInfoEntity.m; sourceTree = "<group>"; };
+		BE0007801DCF5A8000B14A31 /* NPPUIInfoEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NPPUIInfoEntity.h; path = PenSDK/PenComm/NPPUIInfoEntity.h; sourceTree = "<group>"; };
+		BE0007811DCF5A8000B14A31 /* NPPUIInfoEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NPPUIInfoEntity.m; path = PenSDK/PenComm/NPPUIInfoEntity.m; sourceTree = "<group>"; };
+		BE0D472C1DD6993700C743D2 /* NJOnlineWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NJOnlineWindowController.h; path = UserInterface/ViewControllers/NJOnlineWindowController.h; sourceTree = "<group>"; };
+		BE0D472D1DD6993700C743D2 /* NJOnlineWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NJOnlineWindowController.m; path = UserInterface/ViewControllers/NJOnlineWindowController.m; sourceTree = "<group>"; };
+		BE0D47391DD6A34900C743D2 /* NJOnlinePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NJOnlinePageViewController.h; path = UserInterface/ViewControllers/NJOnlinePageViewController.h; sourceTree = "<group>"; };
+		BE0D473A1DD6A34900C743D2 /* NJOnlinePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NJOnlinePageViewController.m; path = UserInterface/ViewControllers/NJOnlinePageViewController.m; sourceTree = "<group>"; };
+		BE17FC7D1DB799E200DBF22B /* NeoSDK.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NeoSDK.xcdatamodel; sourceTree = "<group>"; };
+		BE1C96081DB4F22D00499E56 /* NJNotebookIdStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NJNotebookIdStore.h; path = Managers/NJNotebookIdStore.h; sourceTree = "<group>"; };
+		BE1C96091DB4F22D00499E56 /* NJNotebookIdStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NJNotebookIdStore.m; path = Managers/NJNotebookIdStore.m; sourceTree = "<group>"; };
+		BE1C960C1DB4F2D900499E56 /* KeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KeychainItemWrapper.h; path = Supportings/KeychainItemWrapper.h; sourceTree = "<group>"; };
+		BE1C960D1DB4F2D900499E56 /* KeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KeychainItemWrapper.m; path = Supportings/KeychainItemWrapper.m; sourceTree = "<group>"; };
+		BE1C96101DB4F32900499E56 /* FileLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FileLogger.h; path = Supportings/FileLogger.h; sourceTree = "<group>"; };
+		BE1C96111DB4F32900499E56 /* FileLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FileLogger.m; path = Supportings/FileLogger.m; sourceTree = "<group>"; };
+		BE1C96141DB4F39300499E56 /* NJUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NJUtilities.h; path = Supportings/NJUtilities.h; sourceTree = "<group>"; };
+		BE1C96151DB4F39300499E56 /* NJUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NJUtilities.m; path = Supportings/NJUtilities.m; sourceTree = "<group>"; };
+		BE1C96171DB4F48B00499E56 /* NJNotebookManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NJNotebookManager.h; path = Managers/NJNotebookManager.h; sourceTree = "<group>"; };
+		BE1C96181DB4F48B00499E56 /* NJNotebookManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NJNotebookManager.m; path = Managers/NJNotebookManager.m; sourceTree = "<group>"; };
+		BE1C96191DB4F48B00499E56 /* NJNotebookReaderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NJNotebookReaderManager.h; path = Managers/NJNotebookReaderManager.h; sourceTree = "<group>"; };
+		BE1C961A1DB4F48B00499E56 /* NJNotebookReaderManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NJNotebookReaderManager.m; path = Managers/NJNotebookReaderManager.m; sourceTree = "<group>"; };
+		BE1C961B1DB4F48B00499E56 /* NJNotebookWriterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NJNotebookWriterManager.h; path = Managers/NJNotebookWriterManager.h; sourceTree = "<group>"; };
+		BE1C961C1DB4F48B00499E56 /* NJNotebookWriterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NJNotebookWriterManager.m; path = Managers/NJNotebookWriterManager.m; sourceTree = "<group>"; };
+		BE1C96201DB4F49A00499E56 /* NJVoiceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NJVoiceManager.h; path = Managers/NJVoiceManager.h; sourceTree = "<group>"; };
+		BE1C96211DB4F49A00499E56 /* NJVoiceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NJVoiceManager.m; path = Managers/NJVoiceManager.m; sourceTree = "<group>"; };
+		BE1C96241DB4F53500499E56 /* NJNotebookInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NJNotebookInfo.h; path = Models/NJNotebookInfo.h; sourceTree = "<group>"; };
+		BE1C96251DB4F53500499E56 /* NJNotebookInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NJNotebookInfo.m; path = Models/NJNotebookInfo.m; sourceTree = "<group>"; };
+		BE1C96271DB4F56000499E56 /* NJCoverManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NJCoverManager.h; path = Managers/NJCoverManager.h; sourceTree = "<group>"; };
+		BE1C96281DB4F56000499E56 /* NJCoverManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NJCoverManager.m; path = Managers/NJCoverManager.m; sourceTree = "<group>"; };
+		BE1C962D1DB4FA6500499E56 /* NJNotebookInfoStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NJNotebookInfoStore.h; path = Managers/NJNotebookInfoStore.h; sourceTree = "<group>"; };
+		BE1C962E1DB4FA6500499E56 /* NJNotebookInfoStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NJNotebookInfoStore.m; path = Managers/NJNotebookInfoStore.m; sourceTree = "<group>"; };
+		BE1C96301DB4FC5800499E56 /* NJXMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NJXMLParser.h; path = Supportings/NJXMLParser.h; sourceTree = "<group>"; };
+		BE1C96311DB4FC5800499E56 /* NJXMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NJXMLParser.m; path = Supportings/NJXMLParser.m; sourceTree = "<group>"; };
+		BE1C96331DB4FC8500499E56 /* NJNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NJNetworkManager.h; path = Managers/NJNetworkManager.h; sourceTree = "<group>"; };
+		BE1C96341DB4FC8500499E56 /* NJNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NJNetworkManager.m; path = Managers/NJNetworkManager.m; sourceTree = "<group>"; };
+		BE1C96361DB4FDDD00499E56 /* NJSettingStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NJSettingStore.h; path = Managers/NJSettingStore.h; sourceTree = "<group>"; };
+		BE1C96371DB4FDDD00499E56 /* NJSettingStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NJSettingStore.m; path = Managers/NJSettingStore.m; sourceTree = "<group>"; };
+		BE2283D91DC4D55A00780ACA /* PDFPageConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PDFPageConverter.h; path = PenSDK/PDFPageConverter/PDFPageConverter.h; sourceTree = "<group>"; };
+		BE2283DA1DC4D55A00780ACA /* PDFPageConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PDFPageConverter.m; path = PenSDK/PDFPageConverter/PDFPageConverter.m; sourceTree = "<group>"; };
+		BE2283DB1DC4D55A00780ACA /* PDFPageRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PDFPageRenderer.h; path = PenSDK/PDFPageConverter/PDFPageRenderer.h; sourceTree = "<group>"; };
+		BE2283DC1DC4D55A00780ACA /* PDFPageRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PDFPageRenderer.m; path = PenSDK/PDFPageConverter/PDFPageRenderer.m; sourceTree = "<group>"; };
+		BE36F8751DCE08C50055B6AA /* NSWindow+NJAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSWindow+NJAdditions.h"; path = "Categories/NSWindow+NJAdditions.h"; sourceTree = "<group>"; };
+		BE36F8761DCE08C50055B6AA /* NSWindow+NJAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSWindow+NJAdditions.m"; path = "Categories/NSWindow+NJAdditions.m"; sourceTree = "<group>"; };
+		BE36F8781DCE0AC20055B6AA /* NSBezierPath+MCAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSBezierPath+MCAdditions.h"; path = "Categories/NSBezierPath+MCAdditions.h"; sourceTree = "<group>"; };
+		BE36F8791DCE0AC20055B6AA /* NSBezierPath+MCAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSBezierPath+MCAdditions.m"; path = "Categories/NSBezierPath+MCAdditions.m"; sourceTree = "<group>"; };
+		BE36F87A1DCE0AC20055B6AA /* NSBezierPath+PXRoundedRectangleAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSBezierPath+PXRoundedRectangleAdditions.h"; path = "Categories/NSBezierPath+PXRoundedRectangleAdditions.h"; sourceTree = "<group>"; };
+		BE36F87B1DCE0AC20055B6AA /* NSBezierPath+PXRoundedRectangleAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSBezierPath+PXRoundedRectangleAdditions.m"; path = "Categories/NSBezierPath+PXRoundedRectangleAdditions.m"; sourceTree = "<group>"; };
+		BE6657D21DD0AE7F00C26277 /* NJViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NJViewController.h; path = UserInterface/ViewControllers/NJViewController.h; sourceTree = "<group>"; };
+		BE6657D31DD0AE7F00C26277 /* NJViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NJViewController.m; path = UserInterface/ViewControllers/NJViewController.m; sourceTree = "<group>"; };
+		BE6BBAC61DFB82BE00467DF9 /* NJOnlinePageDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NJOnlinePageDrawView.h; path = UserInterface/Views/NJOnlinePageDrawView.h; sourceTree = "<group>"; };
+		BE6BBAC71DFB82BE00467DF9 /* NJOnlinePageDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NJOnlinePageDrawView.m; path = UserInterface/Views/NJOnlinePageDrawView.m; sourceTree = "<group>"; };
+		BE6BBACA1DFB83A900467DF9 /* NJPageZoomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NJPageZoomView.h; path = UserInterface/Views/NJPageZoomView.h; sourceTree = "<group>"; };
+		BE6BBACB1DFB83A900467DF9 /* NJPageZoomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NJPageZoomView.m; path = UserInterface/Views/NJPageZoomView.m; sourceTree = "<group>"; };
+		BE814C0F1DB65DB9007F20BB /* NPNotebookInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NPNotebookInfo.h; path = PenSDK/PenComm/NPNotebookInfo.h; sourceTree = "<group>"; };
+		BE814C101DB65DB9007F20BB /* NPNotebookInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NPNotebookInfo.m; path = PenSDK/PenComm/NPNotebookInfo.m; sourceTree = "<group>"; };
+		BE814C121DB65E05007F20BB /* NPPaperInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NPPaperInfo.h; path = PenSDK/PenComm/NPPaperInfo.h; sourceTree = "<group>"; };
+		BE814C131DB65E05007F20BB /* NPPaperInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NPPaperInfo.m; path = PenSDK/PenComm/NPPaperInfo.m; sourceTree = "<group>"; };
+		BE814C141DB65E05007F20BB /* NPPUIInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NPPUIInfo.h; path = PenSDK/PenComm/NPPUIInfo.h; sourceTree = "<group>"; };
+		BE814C151DB65E05007F20BB /* NPPUIInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NPPUIInfo.m; path = PenSDK/PenComm/NPPUIInfo.m; sourceTree = "<group>"; };
+		BE814C231DB66CFE007F20BB /* NSBezierPath+BezierPathQuartzUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSBezierPath+BezierPathQuartzUtilities.h"; path = "Supportings/NSBezierPath+BezierPathQuartzUtilities.h"; sourceTree = "<group>"; };
+		BE814C241DB66CFE007F20BB /* NSBezierPath+BezierPathQuartzUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSBezierPath+BezierPathQuartzUtilities.m"; path = "Supportings/NSBezierPath+BezierPathQuartzUtilities.m"; sourceTree = "<group>"; };
+		BE84CCDB1E10CA5700BDC340 /* NJGlobalFunctionsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NJGlobalFunctionsView.h; path = UserInterface/Views/NJGlobalFunctionsView.h; sourceTree = "<group>"; };
+		BE84CCDC1E10CA5700BDC340 /* NJGlobalFunctionsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NJGlobalFunctionsView.m; path = UserInterface/Views/NJGlobalFunctionsView.m; sourceTree = "<group>"; };
+		BE84CCDE1E10CB7200BDC340 /* NJGlobalFunctionsTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NJGlobalFunctionsTable.h; path = UserInterface/Views/NJGlobalFunctionsTable.h; sourceTree = "<group>"; };
+		BE84CCDF1E10CB7200BDC340 /* NJGlobalFunctionsTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NJGlobalFunctionsTable.m; path = UserInterface/Views/NJGlobalFunctionsTable.m; sourceTree = "<group>"; };
+		BE84CCE21E10EEEF00BDC340 /* NJCoreDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NJCoreDataStore.h; path = Managers/NJCoreDataStore.h; sourceTree = "<group>"; };
+		BE84CCE31E10EEEF00BDC340 /* NJCoreDataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NJCoreDataStore.m; path = Managers/NJCoreDataStore.m; sourceTree = "<group>"; };
+		BE84CCE71E10F03C00BDC340 /* NJPageEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NJPageEntity.h; path = Models/NJPageEntity.h; sourceTree = "<group>"; };
+		BE84CCE81E10F03C00BDC340 /* NJPageEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NJPageEntity.m; path = Models/NJPageEntity.m; sourceTree = "<group>"; };
+		BE84CCE91E10F03C00BDC340 /* NJPageEntity+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NJPageEntity+CoreDataProperties.h"; path = "Models/NJPageEntity+CoreDataProperties.h"; sourceTree = "<group>"; };
+		BE84CCEA1E10F03C00BDC340 /* NJPageEntity+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NJPageEntity+CoreDataProperties.m"; path = "Models/NJPageEntity+CoreDataProperties.m"; sourceTree = "<group>"; };
+		BE84CCED1E10F05600BDC340 /* NJTagEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NJTagEntity.h; path = Models/NJTagEntity.h; sourceTree = "<group>"; };
+		BE84CCEE1E10F05600BDC340 /* NJTagEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NJTagEntity.m; path = Models/NJTagEntity.m; sourceTree = "<group>"; };
+		BE84CCEF1E10F05600BDC340 /* NJTagEntity+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NJTagEntity+CoreDataProperties.h"; path = "Models/NJTagEntity+CoreDataProperties.h"; sourceTree = "<group>"; };
+		BE84CCF01E10F05600BDC340 /* NJTagEntity+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NJTagEntity+CoreDataProperties.m"; path = "Models/NJTagEntity+CoreDataProperties.m"; sourceTree = "<group>"; };
+		BE84CCF31E10F07200BDC340 /* NJTranscribeEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NJTranscribeEntity.h; path = Models/NJTranscribeEntity.h; sourceTree = "<group>"; };
+		BE84CCF41E10F07200BDC340 /* NJTranscribeEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NJTranscribeEntity.m; path = Models/NJTranscribeEntity.m; sourceTree = "<group>"; };
+		BE84CCF51E10F07200BDC340 /* NJTranscribeEntity+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NJTranscribeEntity+CoreDataProperties.h"; path = "Models/NJTranscribeEntity+CoreDataProperties.h"; sourceTree = "<group>"; };
+		BE84CCF61E10F07200BDC340 /* NJTranscribeEntity+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NJTranscribeEntity+CoreDataProperties.m"; path = "Models/NJTranscribeEntity+CoreDataProperties.m"; sourceTree = "<group>"; };
+		BE84CCF91E10F0A900BDC340 /* NJTagXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NJTagXML.h; path = Models/NJTagXML.h; sourceTree = "<group>"; };
+		BE84CCFA1E10F0A900BDC340 /* NJTagXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NJTagXML.m; path = Models/NJTagXML.m; sourceTree = "<group>"; };
+		BE84CCFC1E10F34E00BDC340 /* NJMigrationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NJMigrationManager.h; path = Managers/NJMigrationManager.h; sourceTree = "<group>"; };
+		BE84CCFD1E10F34E00BDC340 /* NJMigrationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NJMigrationManager.m; path = Managers/NJMigrationManager.m; sourceTree = "<group>"; };
+		BE84CD001E11065300BDC340 /* NeoNotes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NeoNotes.xcdatamodel; sourceTree = "<group>"; };
+		BE84CD011E11065300BDC340 /* v2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = v2.xcdatamodel; sourceTree = "<group>"; };
+		BE861B1A1DC5C06B00B09747 /* NSImage+saveAsJpegWithName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSImage+saveAsJpegWithName.h"; path = "Supportings/NSImage+saveAsJpegWithName.h"; sourceTree = "<group>"; };
+		BE861B1B1DC5C06B00B09747 /* NSImage+saveAsJpegWithName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSImage+saveAsJpegWithName.m"; path = "Supportings/NSImage+saveAsJpegWithName.m"; sourceTree = "<group>"; };
+		BE86691D1E8A847A0090264B /* note_support_list.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = note_support_list.plist; sourceTree = "<group>"; };
+		BE9011D91DF262A000F2CDC0 /* NJZoomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NJZoomView.h; path = UserInterface/Views/NJZoomView.h; sourceTree = "<group>"; };
+		BE9011DA1DF262A000F2CDC0 /* NJZoomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NJZoomView.m; path = UserInterface/Views/NJZoomView.m; sourceTree = "<group>"; };
+		BE9011DD1DF2634600F2CDC0 /* NSColor+NJAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSColor+NJAdditions.h"; path = "Categories/NSColor+NJAdditions.h"; sourceTree = "<group>"; };
+		BE9011DE1DF2634600F2CDC0 /* NSColor+NJAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSColor+NJAdditions.m"; path = "Categories/NSColor+NJAdditions.m"; sourceTree = "<group>"; };
+		BE912E1F1DB3960900E4B900 /* NeoNotesMacOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeoNotesMacOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE912E221DB3960900E4B900 /* NJAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NJAppDelegate.h; sourceTree = "<group>"; };
+		BE912E231DB3960900E4B900 /* NJAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NJAppDelegate.m; sourceTree = "<group>"; };
+		BE912E261DB3960900E4B900 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BE912E2B1DB3960900E4B900 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BE912E2E1DB3960900E4B900 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BE912E301DB3960900E4B900 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE912E3B1DB39BC800E4B900 /* NeoPenService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NeoPenService.h; path = PenSDK/PenComm/NeoPenService.h; sourceTree = "<group>"; };
+		BE912E3C1DB39BC800E4B900 /* NJPenCommManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NJPenCommManager.h; path = PenSDK/PenComm/NJPenCommManager.h; sourceTree = "<group>"; };
+		BE912E3D1DB39BC800E4B900 /* NJPenCommManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NJPenCommManager.m; path = PenSDK/PenComm/NJPenCommManager.m; sourceTree = "<group>"; };
+		BE912E3E1DB39BC800E4B900 /* NJPenCommParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NJPenCommParser.h; path = PenSDK/PenComm/NJPenCommParser.h; sourceTree = "<group>"; };
+		BE912E3F1DB39BC800E4B900 /* NJPenCommParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NJPenCommParser.m; path = PenSDK/PenComm/NJPenCommParser.m; sourceTree = "<group>"; };
+		BE912E421DB39C0C00E4B900 /* NJMedia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NJMedia.h; path = PenSDK/PageData/NJMedia.h; sourceTree = "<group>"; };
+		BE912E431DB39C0C00E4B900 /* NJMedia.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NJMedia.m; path = PenSDK/PageData/NJMedia.m; sourceTree = "<group>"; };
+		BE912E441DB39C0C00E4B900 /* NJNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NJNode.h; path = PenSDK/PageData/NJNode.h; sourceTree = "<group>"; };
+		BE912E451DB39C0C00E4B900 /* NJNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NJNode.m; path = PenSDK/PageData/NJNode.m; sourceTree = "<group>"; };
+		BE912E461DB39C0C00E4B900 /* NJPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NJPage.h; path = PenSDK/PageData/NJPage.h; sourceTree = "<group>"; };
+		BE912E471DB39C0C00E4B900 /* NJPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NJPage.m; path = PenSDK/PageData/NJPage.m; sourceTree = "<group>"; };
+		BE912E481DB39C0C00E4B900 /* NJRDPFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NJRDPFilter.h; path = PenSDK/PageData/NJRDPFilter.h; sourceTree = "<group>"; };
+		BE912E491DB39C0C00E4B900 /* NJRDPFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NJRDPFilter.m; path = PenSDK/PageData/NJRDPFilter.m; sourceTree = "<group>"; };
+		BE912E4A1DB39C0C00E4B900 /* NJStroke.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NJStroke.h; path = PenSDK/PageData/NJStroke.h; sourceTree = "<group>"; };
+		BE912E4B1DB39C0C00E4B900 /* NJStroke.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NJStroke.m; path = PenSDK/PageData/NJStroke.m; sourceTree = "<group>"; };
+		BE912E4C1DB39C0C00E4B900 /* NJTransformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NJTransformation.h; path = PenSDK/PageData/NJTransformation.h; sourceTree = "<group>"; };
+		BE912E4D1DB39C0C00E4B900 /* NJTransformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NJTransformation.m; path = PenSDK/PageData/NJTransformation.m; sourceTree = "<group>"; };
+		BE912E4E1DB39C0C00E4B900 /* NJVoiceMemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NJVoiceMemo.h; path = PenSDK/PageData/NJVoiceMemo.h; sourceTree = "<group>"; };
+		BE912E4F1DB39C0C00E4B900 /* NJVoiceMemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NJVoiceMemo.m; path = PenSDK/PageData/NJVoiceMemo.m; sourceTree = "<group>"; };
+		BE912E571DB39D3900E4B900 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		BE912E581DB39D4400E4B900 /* configure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = configure.h; path = Supportings/configure.h; sourceTree = "<group>"; };
+		BE912E5A1DB39FB900E4B900 /* NJNotebookPaperInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NJNotebookPaperInfo.h; path = Managers/NJNotebookPaperInfo.h; sourceTree = "<group>"; };
+		BE912E5B1DB39FB900E4B900 /* NJNotebookPaperInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NJNotebookPaperInfo.m; path = Managers/NJNotebookPaperInfo.m; sourceTree = "<group>"; };
+		BE912E5D1DB3A01600E4B900 /* NPPaperManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NPPaperManager.h; path = PenSDK/PenComm/NPPaperManager.h; sourceTree = "<group>"; };
+		BE912E5E1DB3A01600E4B900 /* NPPaperManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NPPaperManager.m; path = PenSDK/PenComm/NPPaperManager.m; sourceTree = "<group>"; };
+		BE912E601DB3A0DC00E4B900 /* NJPageDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NJPageDocument.h; path = Models/NJPageDocument.h; sourceTree = "<group>"; };
+		BE912E611DB3A0DC00E4B900 /* NJPageDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NJPageDocument.m; path = Models/NJPageDocument.m; sourceTree = "<group>"; };
+		BEBBCB571E1A1E97000A9C42 /* GTL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GTL.framework; path = "ExternalLibs/google-api-objectivec-client/Source/build/Debug/GTL.framework"; sourceTree = "<group>"; };
+		BEBBCB591E1A2A0F000A9C42 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		BEBBCB611E1A4634000A9C42 /* NJExportNotebookEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NJExportNotebookEntry.h; path = Models/NJExportNotebookEntry.h; sourceTree = "<group>"; };
+		BEBBCB621E1A4634000A9C42 /* NJExportNotebookEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NJExportNotebookEntry.m; path = Models/NJExportNotebookEntry.m; sourceTree = "<group>"; };
+		CB2FF6338714587514631105 /* Pods-NeoNotesMacOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeoNotesMacOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NeoNotesMacOS/Pods-NeoNotesMacOS.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE912E1C1DB3960900E4B900 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEBBCB5A1E1A2A0F000A9C42 /* WebKit.framework in Frameworks */,
+				E4454B434723DEC11D47B663 /* libPods-NeoNotesMacOS.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02159A9E8064AEC8402C7C57 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB2FF6338714587514631105 /* Pods-NeoNotesMacOS.debug.xcconfig */,
+				5C4B1093132018F100C8E7B6 /* Pods-NeoNotesMacOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		85BF2BD661CB5BF5C8F0B9E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BEBBCB591E1A2A0F000A9C42 /* WebKit.framework */,
+				BEBBCB571E1A1E97000A9C42 /* GTL.framework */,
+				2390576452B867B0D5E0B5C3 /* libPods-NeoNotesMacOS.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE0D472B1DD698F500C743D2 /* OnlineView */ = {
+			isa = PBXGroup;
+			children = (
+				BE0D472C1DD6993700C743D2 /* NJOnlineWindowController.h */,
+				BE0D472D1DD6993700C743D2 /* NJOnlineWindowController.m */,
+				BE0D47391DD6A34900C743D2 /* NJOnlinePageViewController.h */,
+				BE0D473A1DD6A34900C743D2 /* NJOnlinePageViewController.m */,
+				BE6BBAC61DFB82BE00467DF9 /* NJOnlinePageDrawView.h */,
+				BE6BBAC71DFB82BE00467DF9 /* NJOnlinePageDrawView.m */,
+			);
+			name = OnlineView;
+			sourceTree = "<group>";
+		};
+		BE17FC751DB794C500DBF22B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BE86691D1E8A847A0090264B /* note_support_list.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		BE1C960B1DB4F29400499E56 /* Keychain */ = {
+			isa = PBXGroup;
+			children = (
+				BE1C960C1DB4F2D900499E56 /* KeychainItemWrapper.h */,
+				BE1C960D1DB4F2D900499E56 /* KeychainItemWrapper.m */,
+			);
+			name = Keychain;
+			sourceTree = "<group>";
+		};
+		BE1C960F1DB4F31D00499E56 /* FileLogger */ = {
+			isa = PBXGroup;
+			children = (
+				BE1C96101DB4F32900499E56 /* FileLogger.h */,
+				BE1C96111DB4F32900499E56 /* FileLogger.m */,
+			);
+			name = FileLogger;
+			sourceTree = "<group>";
+		};
+		BE1C96131DB4F38000499E56 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				BE1C96301DB4FC5800499E56 /* NJXMLParser.h */,
+				BE1C96311DB4FC5800499E56 /* NJXMLParser.m */,
+				BE1C96141DB4F39300499E56 /* NJUtilities.h */,
+				BE1C96151DB4F39300499E56 /* NJUtilities.m */,
+				BE814C231DB66CFE007F20BB /* NSBezierPath+BezierPathQuartzUtilities.h */,
+				BE814C241DB66CFE007F20BB /* NSBezierPath+BezierPathQuartzUtilities.m */,
+				BE861B1A1DC5C06B00B09747 /* NSImage+saveAsJpegWithName.h */,
+				BE861B1B1DC5C06B00B09747 /* NSImage+saveAsJpegWithName.m */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		BE1C96231DB4F51100499E56 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BE84CCFF1E11065300BDC340 /* NeoNotes.xcdatamodeld */,
+				BE84CCE61E10EF3D00BDC340 /* Entities */,
+				BE84CCE11E10EEC500BDC340 /* CoreData */,
+				BE84CCF91E10F0A900BDC340 /* NJTagXML.h */,
+				BE84CCFA1E10F0A900BDC340 /* NJTagXML.m */,
+				BE1C96241DB4F53500499E56 /* NJNotebookInfo.h */,
+				BE1C96251DB4F53500499E56 /* NJNotebookInfo.m */,
+				BEBBCB611E1A4634000A9C42 /* NJExportNotebookEntry.h */,
+				BEBBCB621E1A4634000A9C42 /* NJExportNotebookEntry.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		BE2283D81DC4D53F00780ACA /* PDFPageConverter */ = {
+			isa = PBXGroup;
+			children = (
+				BE2283D91DC4D55A00780ACA /* PDFPageConverter.h */,
+				BE2283DA1DC4D55A00780ACA /* PDFPageConverter.m */,
+				BE2283DB1DC4D55A00780ACA /* PDFPageRenderer.h */,
+				BE2283DC1DC4D55A00780ACA /* PDFPageRenderer.m */,
+			);
+			name = PDFPageConverter;
+			sourceTree = "<group>";
+		};
+		BE36F8691DCDFCE20055B6AA /* UserInterface */ = {
+			isa = PBXGroup;
+			children = (
+				BE84CCDA1E10CA3200BDC340 /* GlobalFunctionsView */,
+				BE6BBAC91DFB836500467DF9 /* BaseClasses */,
+				BE0D472B1DD698F500C743D2 /* OnlineView */,
+			);
+			name = UserInterface;
+			sourceTree = "<group>";
+		};
+		BE36F8731DCE08760055B6AA /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				BE9011DD1DF2634600F2CDC0 /* NSColor+NJAdditions.h */,
+				BE9011DE1DF2634600F2CDC0 /* NSColor+NJAdditions.m */,
+				BE36F8781DCE0AC20055B6AA /* NSBezierPath+MCAdditions.h */,
+				BE36F8791DCE0AC20055B6AA /* NSBezierPath+MCAdditions.m */,
+				BE36F87A1DCE0AC20055B6AA /* NSBezierPath+PXRoundedRectangleAdditions.h */,
+				BE36F87B1DCE0AC20055B6AA /* NSBezierPath+PXRoundedRectangleAdditions.m */,
+				BE36F8751DCE08C50055B6AA /* NSWindow+NJAdditions.h */,
+				BE36F8761DCE08C50055B6AA /* NSWindow+NJAdditions.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		BE6BBAC91DFB836500467DF9 /* BaseClasses */ = {
+			isa = PBXGroup;
+			children = (
+				BE9011D91DF262A000F2CDC0 /* NJZoomView.h */,
+				BE9011DA1DF262A000F2CDC0 /* NJZoomView.m */,
+				BE6657D21DD0AE7F00C26277 /* NJViewController.h */,
+				BE6657D31DD0AE7F00C26277 /* NJViewController.m */,
+				BE6BBACA1DFB83A900467DF9 /* NJPageZoomView.h */,
+				BE6BBACB1DFB83A900467DF9 /* NJPageZoomView.m */,
+			);
+			name = BaseClasses;
+			sourceTree = "<group>";
+		};
+		BE84CCDA1E10CA3200BDC340 /* GlobalFunctionsView */ = {
+			isa = PBXGroup;
+			children = (
+				BE84CCDB1E10CA5700BDC340 /* NJGlobalFunctionsView.h */,
+				BE84CCDC1E10CA5700BDC340 /* NJGlobalFunctionsView.m */,
+				BE84CCDE1E10CB7200BDC340 /* NJGlobalFunctionsTable.h */,
+				BE84CCDF1E10CB7200BDC340 /* NJGlobalFunctionsTable.m */,
+			);
+			name = GlobalFunctionsView;
+			sourceTree = "<group>";
+		};
+		BE84CCE11E10EEC500BDC340 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				BE84CCFC1E10F34E00BDC340 /* NJMigrationManager.h */,
+				BE84CCFD1E10F34E00BDC340 /* NJMigrationManager.m */,
+				BE84CCE21E10EEEF00BDC340 /* NJCoreDataStore.h */,
+				BE84CCE31E10EEEF00BDC340 /* NJCoreDataStore.m */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		BE84CCE61E10EF3D00BDC340 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				BE84CCF31E10F07200BDC340 /* NJTranscribeEntity.h */,
+				BE84CCF41E10F07200BDC340 /* NJTranscribeEntity.m */,
+				BE84CCF51E10F07200BDC340 /* NJTranscribeEntity+CoreDataProperties.h */,
+				BE84CCF61E10F07200BDC340 /* NJTranscribeEntity+CoreDataProperties.m */,
+				BE84CCED1E10F05600BDC340 /* NJTagEntity.h */,
+				BE84CCEE1E10F05600BDC340 /* NJTagEntity.m */,
+				BE84CCEF1E10F05600BDC340 /* NJTagEntity+CoreDataProperties.h */,
+				BE84CCF01E10F05600BDC340 /* NJTagEntity+CoreDataProperties.m */,
+				BE84CCE71E10F03C00BDC340 /* NJPageEntity.h */,
+				BE84CCE81E10F03C00BDC340 /* NJPageEntity.m */,
+				BE84CCE91E10F03C00BDC340 /* NJPageEntity+CoreDataProperties.h */,
+				BE84CCEA1E10F03C00BDC340 /* NJPageEntity+CoreDataProperties.m */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		BE912E161DB3960900E4B900 = {
+			isa = PBXGroup;
+			children = (
+				BE912E211DB3960900E4B900 /* NeoNotesMacOS */,
+				BE912E201DB3960900E4B900 /* Products */,
+				02159A9E8064AEC8402C7C57 /* Pods */,
+				85BF2BD661CB5BF5C8F0B9E1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BE912E201DB3960900E4B900 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE912E1F1DB3960900E4B900 /* NeoNotesMacOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE912E211DB3960900E4B900 /* NeoNotesMacOS */ = {
+			isa = PBXGroup;
+			children = (
+				BE36F8731DCE08760055B6AA /* Categories */,
+				BE36F8691DCDFCE20055B6AA /* UserInterface */,
+				BE17FC751DB794C500DBF22B /* Resources */,
+				BE1C96231DB4F51100499E56 /* Models */,
+				BE912E591DB39EC600E4B900 /* Managers */,
+				BE912E361DB39ABA00E4B900 /* PenSDK */,
+				BE912E251DB3960900E4B900 /* Supporting Files */,
+				BE912E221DB3960900E4B900 /* NJAppDelegate.h */,
+				BE912E231DB3960900E4B900 /* NJAppDelegate.m */,
+				BE912E2B1DB3960900E4B900 /* Assets.xcassets */,
+				BE912E2D1DB3960900E4B900 /* Main.storyboard */,
+				BE912E301DB3960900E4B900 /* Info.plist */,
+			);
+			path = NeoNotesMacOS;
+			sourceTree = "<group>";
+		};
+		BE912E251DB3960900E4B900 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE1C96131DB4F38000499E56 /* Utilities */,
+				BE1C960F1DB4F31D00499E56 /* FileLogger */,
+				BE1C960B1DB4F29400499E56 /* Keychain */,
+				BE912E581DB39D4400E4B900 /* configure.h */,
+				BE912E571DB39D3900E4B900 /* PrefixHeader.pch */,
+				BE912E261DB3960900E4B900 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BE912E361DB39ABA00E4B900 /* PenSDK */ = {
+			isa = PBXGroup;
+			children = (
+				BE2283D81DC4D53F00780ACA /* PDFPageConverter */,
+				BE912E381DB39AFC00E4B900 /* PageData */,
+				BE912E371DB39AE600E4B900 /* PenComm */,
+			);
+			name = PenSDK;
+			sourceTree = "<group>";
+		};
+		BE912E371DB39AE600E4B900 /* PenComm */ = {
+			isa = PBXGroup;
+			children = (
+				BE912E391DB39B1400E4B900 /* Models */,
+				BE912E5D1DB3A01600E4B900 /* NPPaperManager.h */,
+				BE912E5E1DB3A01600E4B900 /* NPPaperManager.m */,
+				BE912E3B1DB39BC800E4B900 /* NeoPenService.h */,
+				BE912E3C1DB39BC800E4B900 /* NJPenCommManager.h */,
+				BE912E3D1DB39BC800E4B900 /* NJPenCommManager.m */,
+				BE912E3E1DB39BC800E4B900 /* NJPenCommParser.h */,
+				BE912E3F1DB39BC800E4B900 /* NJPenCommParser.m */,
+			);
+			name = PenComm;
+			sourceTree = "<group>";
+		};
+		BE912E381DB39AFC00E4B900 /* PageData */ = {
+			isa = PBXGroup;
+			children = (
+				BE912E601DB3A0DC00E4B900 /* NJPageDocument.h */,
+				BE912E611DB3A0DC00E4B900 /* NJPageDocument.m */,
+				BE912E421DB39C0C00E4B900 /* NJMedia.h */,
+				BE912E431DB39C0C00E4B900 /* NJMedia.m */,
+				BE912E441DB39C0C00E4B900 /* NJNode.h */,
+				BE912E451DB39C0C00E4B900 /* NJNode.m */,
+				BE912E461DB39C0C00E4B900 /* NJPage.h */,
+				BE912E471DB39C0C00E4B900 /* NJPage.m */,
+				BE912E481DB39C0C00E4B900 /* NJRDPFilter.h */,
+				BE912E491DB39C0C00E4B900 /* NJRDPFilter.m */,
+				BE912E4A1DB39C0C00E4B900 /* NJStroke.h */,
+				BE912E4B1DB39C0C00E4B900 /* NJStroke.m */,
+				BE912E4C1DB39C0C00E4B900 /* NJTransformation.h */,
+				BE912E4D1DB39C0C00E4B900 /* NJTransformation.m */,
+				BE912E4E1DB39C0C00E4B900 /* NJVoiceMemo.h */,
+				BE912E4F1DB39C0C00E4B900 /* NJVoiceMemo.m */,
+			);
+			name = PageData;
+			sourceTree = "<group>";
+		};
+		BE912E391DB39B1400E4B900 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BE17FC7C1DB799E200DBF22B /* NeoSDK.xcdatamodeld */,
+				BE912E3A1DB39B1E00E4B900 /* Entities */,
+				BE814C121DB65E05007F20BB /* NPPaperInfo.h */,
+				BE814C131DB65E05007F20BB /* NPPaperInfo.m */,
+				BE814C141DB65E05007F20BB /* NPPUIInfo.h */,
+				BE814C151DB65E05007F20BB /* NPPUIInfo.m */,
+				BE814C0F1DB65DB9007F20BB /* NPNotebookInfo.h */,
+				BE814C101DB65DB9007F20BB /* NPNotebookInfo.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		BE912E3A1DB39B1E00E4B900 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				BE00077E1DCF5A8000B14A31 /* NPPaperInfoEntity.h */,
+				BE00077F1DCF5A8000B14A31 /* NPPaperInfoEntity.m */,
+				BE0007801DCF5A8000B14A31 /* NPPUIInfoEntity.h */,
+				BE0007811DCF5A8000B14A31 /* NPPUIInfoEntity.m */,
+				BE00077B1DCF5A5300B14A31 /* NPNotebookInfoEntity.h */,
+				BE00077C1DCF5A5300B14A31 /* NPNotebookInfoEntity.m */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		BE912E591DB39EC600E4B900 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				BE1C96361DB4FDDD00499E56 /* NJSettingStore.h */,
+				BE1C96371DB4FDDD00499E56 /* NJSettingStore.m */,
+				BE1C96331DB4FC8500499E56 /* NJNetworkManager.h */,
+				BE1C96341DB4FC8500499E56 /* NJNetworkManager.m */,
+				BE1C962D1DB4FA6500499E56 /* NJNotebookInfoStore.h */,
+				BE1C962E1DB4FA6500499E56 /* NJNotebookInfoStore.m */,
+				BE1C96271DB4F56000499E56 /* NJCoverManager.h */,
+				BE1C96281DB4F56000499E56 /* NJCoverManager.m */,
+				BE1C96201DB4F49A00499E56 /* NJVoiceManager.h */,
+				BE1C96211DB4F49A00499E56 /* NJVoiceManager.m */,
+				BE1C96171DB4F48B00499E56 /* NJNotebookManager.h */,
+				BE1C96181DB4F48B00499E56 /* NJNotebookManager.m */,
+				BE1C96191DB4F48B00499E56 /* NJNotebookReaderManager.h */,
+				BE1C961A1DB4F48B00499E56 /* NJNotebookReaderManager.m */,
+				BE1C961B1DB4F48B00499E56 /* NJNotebookWriterManager.h */,
+				BE1C961C1DB4F48B00499E56 /* NJNotebookWriterManager.m */,
+				BE1C96081DB4F22D00499E56 /* NJNotebookIdStore.h */,
+				BE1C96091DB4F22D00499E56 /* NJNotebookIdStore.m */,
+				BE912E5A1DB39FB900E4B900 /* NJNotebookPaperInfo.h */,
+				BE912E5B1DB39FB900E4B900 /* NJNotebookPaperInfo.m */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE912E1E1DB3960900E4B900 /* NeoNotesMacOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE912E331DB3960900E4B900 /* Build configuration list for PBXNativeTarget "NeoNotesMacOS" */;
+			buildPhases = (
+				8F0660C6BDF83FDE77DA6237 /* [CP] Check Pods Manifest.lock */,
+				BE912E1B1DB3960900E4B900 /* Sources */,
+				BE912E1C1DB3960900E4B900 /* Frameworks */,
+				BE912E1D1DB3960900E4B900 /* Resources */,
+				4D1722641DF4AE5B9AD27541 /* [CP] Embed Pods Frameworks */,
+				B60492215FF2F1726E2687AA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NeoNotesMacOS;
+			productName = NeoNotesMacOS;
+			productReference = BE912E1F1DB3960900E4B900 /* NeoNotesMacOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE912E171DB3960900E4B900 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Neolabconvergence;
+				TargetAttributes = {
+					BE912E1E1DB3960900E4B900 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = BE912E1A1DB3960900E4B900 /* Build configuration list for PBXProject "NeoNotesMacOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BE912E161DB3960900E4B900;
+			productRefGroup = BE912E201DB3960900E4B900 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE912E1E1DB3960900E4B900 /* NeoNotesMacOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE912E1D1DB3960900E4B900 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE86691E1E8A847A0090264B /* note_support_list.plist in Resources */,
+				BE912E2C1DB3960900E4B900 /* Assets.xcassets in Resources */,
+				BE912E2F1DB3960900E4B900 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4D1722641DF4AE5B9AD27541 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NeoNotesMacOS/Pods-NeoNotesMacOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F0660C6BDF83FDE77DA6237 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B60492215FF2F1726E2687AA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NeoNotesMacOS/Pods-NeoNotesMacOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE912E1B1DB3960900E4B900 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE1C96261DB4F53500499E56 /* NJNotebookInfo.m in Sources */,
+				BE84CCF71E10F07200BDC340 /* NJTranscribeEntity.m in Sources */,
+				BE1C96291DB4F56000499E56 /* NJCoverManager.m in Sources */,
+				BE84CD021E11065300BDC340 /* NeoNotes.xcdatamodeld in Sources */,
+				BE912E561DB39C0C00E4B900 /* NJVoiceMemo.m in Sources */,
+				BE1C961F1DB4F48B00499E56 /* NJNotebookWriterManager.m in Sources */,
+				BEBBCB631E1A4634000A9C42 /* NJExportNotebookEntry.m in Sources */,
+				BE0D473B1DD6A34900C743D2 /* NJOnlinePageViewController.m in Sources */,
+				BE17FC7E1DB799E200DBF22B /* NeoSDK.xcdatamodeld in Sources */,
+				BE1C96121DB4F32900499E56 /* FileLogger.m in Sources */,
+				BE1C962F1DB4FA6500499E56 /* NJNotebookInfoStore.m in Sources */,
+				BE1C960A1DB4F22D00499E56 /* NJNotebookIdStore.m in Sources */,
+				BE84CCEC1E10F03C00BDC340 /* NJPageEntity+CoreDataProperties.m in Sources */,
+				BE84CCE01E10CB7200BDC340 /* NJGlobalFunctionsTable.m in Sources */,
+				BE912E521DB39C0C00E4B900 /* NJPage.m in Sources */,
+				BE9011DF1DF2634600F2CDC0 /* NSColor+NJAdditions.m in Sources */,
+				BE814C171DB65E05007F20BB /* NPPUIInfo.m in Sources */,
+				BE84CCEB1E10F03C00BDC340 /* NJPageEntity.m in Sources */,
+				BE36F87C1DCE0AC20055B6AA /* NSBezierPath+MCAdditions.m in Sources */,
+				BE84CCFB1E10F0A900BDC340 /* NJTagXML.m in Sources */,
+				BE6BBAC81DFB82BE00467DF9 /* NJOnlinePageDrawView.m in Sources */,
+				BE912E411DB39BC800E4B900 /* NJPenCommParser.m in Sources */,
+				BE2283DE1DC4D55A00780ACA /* PDFPageRenderer.m in Sources */,
+				BE814C161DB65E05007F20BB /* NPPaperInfo.m in Sources */,
+				BE0007831DCF5A8000B14A31 /* NPPUIInfoEntity.m in Sources */,
+				BE1C96221DB4F49A00499E56 /* NJVoiceManager.m in Sources */,
+				BE84CCE41E10EEEF00BDC340 /* NJCoreDataStore.m in Sources */,
+				BE0D472F1DD6993700C743D2 /* NJOnlineWindowController.m in Sources */,
+				BE1C96381DB4FDDD00499E56 /* NJSettingStore.m in Sources */,
+				BE861B1C1DC5C06B00B09747 /* NSImage+saveAsJpegWithName.m in Sources */,
+				BE814C111DB65DB9007F20BB /* NPNotebookInfo.m in Sources */,
+				BE6BBACC1DFB83A900467DF9 /* NJPageZoomView.m in Sources */,
+				BE84CCF81E10F07200BDC340 /* NJTranscribeEntity+CoreDataProperties.m in Sources */,
+				BE6657D41DD0AE7F00C26277 /* NJViewController.m in Sources */,
+				BE84CCFE1E10F34E00BDC340 /* NJMigrationManager.m in Sources */,
+				BE912E501DB39C0C00E4B900 /* NJMedia.m in Sources */,
+				BE84CCDD1E10CA5700BDC340 /* NJGlobalFunctionsView.m in Sources */,
+				BE912E271DB3960900E4B900 /* main.m in Sources */,
+				BE912E241DB3960900E4B900 /* NJAppDelegate.m in Sources */,
+				BE36F8771DCE08C50055B6AA /* NSWindow+NJAdditions.m in Sources */,
+				BE912E551DB39C0C00E4B900 /* NJTransformation.m in Sources */,
+				BE1C961D1DB4F48B00499E56 /* NJNotebookManager.m in Sources */,
+				BE912E621DB3A0DC00E4B900 /* NJPageDocument.m in Sources */,
+				BE00077D1DCF5A5300B14A31 /* NPNotebookInfoEntity.m in Sources */,
+				BE1C96161DB4F39300499E56 /* NJUtilities.m in Sources */,
+				BE2283DD1DC4D55A00780ACA /* PDFPageConverter.m in Sources */,
+				BE84CCF21E10F05600BDC340 /* NJTagEntity+CoreDataProperties.m in Sources */,
+				BE1C961E1DB4F48B00499E56 /* NJNotebookReaderManager.m in Sources */,
+				BE912E511DB39C0C00E4B900 /* NJNode.m in Sources */,
+				BE912E541DB39C0C00E4B900 /* NJStroke.m in Sources */,
+				BE1C96321DB4FC5800499E56 /* NJXMLParser.m in Sources */,
+				BE814C251DB66CFE007F20BB /* NSBezierPath+BezierPathQuartzUtilities.m in Sources */,
+				BE36F87D1DCE0AC20055B6AA /* NSBezierPath+PXRoundedRectangleAdditions.m in Sources */,
+				BE1C96351DB4FC8500499E56 /* NJNetworkManager.m in Sources */,
+				BE0007821DCF5A8000B14A31 /* NPPaperInfoEntity.m in Sources */,
+				BE912E401DB39BC800E4B900 /* NJPenCommManager.m in Sources */,
+				BE912E5C1DB39FB900E4B900 /* NJNotebookPaperInfo.m in Sources */,
+				BE1C960E1DB4F2D900499E56 /* KeychainItemWrapper.m in Sources */,
+				BE9011DC1DF262A000F2CDC0 /* NJZoomView.m in Sources */,
+				BE912E5F1DB3A01600E4B900 /* NPPaperManager.m in Sources */,
+				BE912E531DB39C0C00E4B900 /* NJRDPFilter.m in Sources */,
+				BE84CCF11E10F05600BDC340 /* NJTagEntity.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BE912E2D1DB3960900E4B900 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE912E2E1DB3960900E4B900 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BE912E311DB3960900E4B900 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		BE912E321DB3960900E4B900 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		BE912E341DB3960900E4B900 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB2FF6338714587514631105 /* Pods-NeoNotesMacOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ExternalLibs/google-api-objectivec-client/Source/build/Debug",
+				);
+				GCC_PREFIX_HEADER = NeoNotesMacOS/PrefixHeader.pch;
+				INFOPLIST_FILE = NeoNotesMacOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/INAppStoreWindow\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/zipzap\"",
+					"-DGTL_BUILT_AS_FRAMEWORK=1",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.neolab.NeoNotesMacOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BE912E351DB3960900E4B900 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C4B1093132018F100C8E7B6 /* Pods-NeoNotesMacOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ExternalLibs/google-api-objectivec-client/Source/build/Debug",
+				);
+				GCC_PREFIX_HEADER = NeoNotesMacOS/PrefixHeader.pch;
+				INFOPLIST_FILE = NeoNotesMacOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/INAppStoreWindow\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/zipzap\"",
+					"-DGTL_BUILT_AS_FRAMEWORK=1",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.neolab.NeoNotesMacOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE912E1A1DB3960900E4B900 /* Build configuration list for PBXProject "NeoNotesMacOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE912E311DB3960900E4B900 /* Debug */,
+				BE912E321DB3960900E4B900 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE912E331DB3960900E4B900 /* Build configuration list for PBXNativeTarget "NeoNotesMacOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE912E341DB3960900E4B900 /* Debug */,
+				BE912E351DB3960900E4B900 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BE17FC7C1DB799E200DBF22B /* NeoSDK.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BE17FC7D1DB799E200DBF22B /* NeoSDK.xcdatamodel */,
+			);
+			currentVersion = BE17FC7D1DB799E200DBF22B /* NeoSDK.xcdatamodel */;
+			name = NeoSDK.xcdatamodeld;
+			path = PenSDK/PenComm/NeoSDK.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		BE84CCFF1E11065300BDC340 /* NeoNotes.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BE84CD001E11065300BDC340 /* NeoNotes.xcdatamodel */,
+				BE84CD011E11065300BDC340 /* v2.xcdatamodel */,
+			);
+			currentVersion = BE84CD001E11065300BDC340 /* NeoNotes.xcdatamodel */;
+			path = NeoNotes.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BE912E171DB3960900E4B900 /* Project object */;
+}

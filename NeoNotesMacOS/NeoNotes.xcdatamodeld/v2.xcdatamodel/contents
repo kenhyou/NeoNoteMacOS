@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="15B42" minimumToolsVersion="Xcode 4.3">
+    <entity name="NJActivityEntity" representedClassName="NJActivityEntity" syncable="YES">
+        <attribute name="dateCreated" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="dateStr" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="extra1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="extra2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="extra3" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="location" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="notebookUuid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pageNum" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="timeStr" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="NJNotebookEntity" representedClassName="NJNotebookEntity" syncable="YES">
+        <attribute name="accessLevel" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="coverFileName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dateArchived" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="dateCreated" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="dateModified" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="evGuid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isActivated" optional="YES" attributeType="Boolean" defaultValueString="YES" syncable="YES"/>
+        <attribute name="notebookId" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="notebookTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="notebookUuid" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="pages" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="NJPageEntity" inverseName="notebookInfo" inverseEntity="NJPageEntity" syncable="YES"/>
+    </entity>
+    <entity name="NJPageEntity" representedClassName="NJPageEntity" syncable="YES">
+        <attribute name="dateCreated" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="dateModified" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="evGuid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="evSyncTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="notebookUuid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pageNum" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="notebookInfo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="NJNotebookEntity" inverseName="pages" inverseEntity="NJNotebookEntity" syncable="YES"/>
+        <relationship name="pageText" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="NJTranscribeEntity" inverseName="pageInfo" inverseEntity="NJTranscribeEntity" syncable="YES"/>
+        <relationship name="strokes" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="NJStrokeEntity" inverseName="pageInfo" inverseEntity="NJStrokeEntity" syncable="YES"/>
+        <relationship name="tags" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="NJTagEntity" inverseName="pageInfo" inverseEntity="NJTagEntity" syncable="YES"/>
+    </entity>
+    <entity name="NJStrokeEntity" representedClassName="NJStrokeEntity" syncable="YES">
+        <attribute name="color" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="dataCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="pData" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="renderType" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="startTime" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="tData" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="thickness" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="xData" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="yData" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <relationship name="pageInfo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="NJPageEntity" inverseName="strokes" inverseEntity="NJPageEntity" syncable="YES"/>
+    </entity>
+    <entity name="NJTagEntity" representedClassName="NJTagEntity" syncable="YES">
+        <attribute name="dateCreated" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="tagName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="pageInfo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="NJPageEntity" inverseName="tags" inverseEntity="NJPageEntity" syncable="YES"/>
+    </entity>
+    <entity name="NJTranscribeEntity" representedClassName="NJTranscribeEntity" syncable="YES">
+        <attribute name="dateTranscribed" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="lngPack" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="pageText" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="pageInfo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="NJPageEntity" inverseName="pageText" inverseEntity="NJPageEntity" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="NJActivityEntity" positionX="333" positionY="-130" width="128" height="193"/>
+        <element name="NJNotebookEntity" positionX="61" positionY="9" width="128" height="210"/>
+        <element name="NJPageEntity" positionX="333" positionY="86" width="128" height="195"/>
+        <element name="NJStrokeEntity" positionX="745" positionY="14" width="128" height="193"/>
+        <element name="NJTagEntity" positionX="657" positionY="360" width="128" height="88"/>
+        <element name="NJTranscribeEntity" positionX="799" positionY="-171" width="128" height="103"/>
+    </elements>
+</model>
