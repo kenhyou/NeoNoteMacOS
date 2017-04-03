@@ -12,19 +12,16 @@ PODS:
   - AFNetworking/Reachability (3.1.0)
   - AFNetworking/Security (3.1.0)
   - AFNetworking/Serialization (3.1.0)
-  - INAppStoreWindow (1.4)
   - zipzap (8.1.1)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
-  - INAppStoreWindow
   - zipzap (~> 8.1.1)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
-  INAppStoreWindow: 4fd569f7435557239e78316de139e886ccbaec4d
   zipzap: 940162d9c9c60472c2eab341385e4214da0fdf1c
 
-PODFILE CHECKSUM: fd3e34c166840807415db4a6fbad2204414f19b5
+PODFILE CHECKSUM: 77ae604992e34d1d7f4aed4389a931c2b2dbf179
 
 COCOAPODS: 1.0.1

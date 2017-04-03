@@ -24,10 +24,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-## INAppStoreWindow
-
-INAppStoreWindow is licensed under the BSD license.
-
 ## zipzap
 
 Copyright (c) 2012, Pixelglow Software.

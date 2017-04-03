@@ -1,966 +1,2903 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		01D310E2DAC58192E209FFA896339578 /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = B9E5D0313BC04EEE3D643637A32A9348 /* AFURLResponseSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		057E6BAEE5AC84B3B948EE6781A26EF4 /* ZZAESDecryptInputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B97BEA1CF82799384FFC5D4616974BA /* ZZAESDecryptInputStream.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		063ABFD86B3B4EE2D44A0BFD4C6730D0 /* ZZArchiveEntryWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A13B093573A921E44454C410C7051C8 /* ZZArchiveEntryWriter.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		0B570DE4FB41EE8963514154DE380813 /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D2ABA5CB94B5B1569C487A87215E273 /* AFSecurityPolicy.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0C1FC34B0F074769A87485F279AD0A3E /* ZZStoreOutputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ECC258370CDA5EE27E3A6936E7F4852 /* ZZStoreOutputStream.m */; };
-		0E6861130E45B5D54E744BBA8796BABE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42C47B4739F9D6F433145AA03E8F6F6D /* Foundation.framework */; };
-		12E803E3DF93037F88C1FBEC3F3A5E80 /* ZZDataChannelOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 13A515668290676F1294A59DF76D0BC9 /* ZZDataChannelOutput.m */; };
-		13674A344566998D9B8FF66CB05C91EF /* ZZStandardDecryptInputStream.mm in Sources */ = {isa = PBXBuildFile; fileRef = 07D3F2830E1578B6D801F2F448DEFDD9 /* ZZStandardDecryptInputStream.mm */; };
-		147132EB8ECC0C9A2997455B4875B27A /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E64191BF46597DAD7477356E6CD32205 /* AFHTTPSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1CED2EE853B11FE99BB1BE7DDF1B4D1D /* ZZFileChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = F5D8629E2344EB337E1DA2E5EE7C64EB /* ZZFileChannel.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		20FBD84E6100A078E4C7A5D25EE63FF9 /* ZZStandardDecryptInputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E4AED09E302F46369A0414EAC9C7862 /* ZZStandardDecryptInputStream.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		2AAE7F1AF3496732ABB13230CDE400F5 /* ZZDeflateOutputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BD56FFCBADACA11067920EFAB69E36E /* ZZDeflateOutputStream.m */; };
-		2C0E1B2717D5394E78AD7114040BF551 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE61CCDEA637134DADDD2ECFC3E60640 /* AFURLSessionManager.m */; };
-		3184EEA3BFA93417842FB8B9B8F5E13B /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4A6DF15376C495BD95BBAB5177F6458 /* ApplicationServices.framework */; };
-		3276C55F12B91479BAEB4EFDB9736B5C /* ZZStoreOutputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = A782EF70152C1C08A4C3F42CDE5221F9 /* ZZStoreOutputStream.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		3455BE0F9A1389D9FEEDFB3753DC6404 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A8DB22550677F528B0138E6908D54E /* AFURLRequestSerialization.m */; };
-		34E17F0E73DC89EACFE3A1AAA62C9657 /* ZZOldArchiveEntryWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = AEDFCC776D5CB2E93C2AFF1BFE6F6E36 /* ZZOldArchiveEntryWriter.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		350BF6FDB9F6B927A851368CE8B3B832 /* ZZHeaders.h in Headers */ = {isa = PBXBuildFile; fileRef = 4591613990208F2675426E5C12EB68F0 /* ZZHeaders.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		383FBAC759AC93DFBA1E6231D1998EC3 /* ZZOldArchiveEntry.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB934767C9A29DD27B265A5C632AE86C /* ZZOldArchiveEntry.mm */; };
-		43DF71878FEE53F9C6AA9FE25AE25BEB /* ZipZap.h in Headers */ = {isa = PBXBuildFile; fileRef = 729370E0EF7205A9D3298D2C17AF97CB /* ZipZap.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		43FAEF57BCD6FF29E0B67F74187EE8D7 /* Pods-NeoNotesMacOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AD29536F83C92933FE4129FA610F924F /* Pods-NeoNotesMacOS-dummy.m */; };
-		4CD3642B812E501998987D3455C4508C /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 483EB50B4EE9E64BD55A5A607BAAF753 /* AFURLSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		55B1A05862444104930E8E3573E3AA5F /* ZZArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F49CB280BE5843BE67DF8650A2864E6 /* ZZArchive.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		563957F71AD2BECFEE7E28CEE7706B00 /* zipzap-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E4ADF886DBBF34F3257494B890E2E98 /* zipzap-dummy.m */; };
-		607E909A1FE0E95FBB7B2E7099262A47 /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 45762899FEED3583E20455AAF8FB609C /* AFNetworkReachabilityManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62460977E56D63023CAD1E074188E9A9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CDDAB69FD7E19C9CC1A8065BD2F782 /* Cocoa.framework */; };
-		64B8237F36750643DD756FEB44F5A5A0 /* ZZFileChannelOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 790F52B22ADB920F655C504EF3205CCD /* ZZFileChannelOutput.m */; };
-		6AB830947471CC70965E122662832584 /* ZZDataChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6417288543BD9EB4714C11AE416C2DAB /* ZZDataChannel.m */; };
-		744BDA42C38330C1E88ECA1FECBFE660 /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = C2FC98548ACA9A87089820453D5D4F73 /* AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7633091877A1FE6E5D70E86056A650E2 /* ZZDeflateOutputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D57FB6418BBC9A7B4F52E6D80C05785 /* ZZDeflateOutputStream.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		79417799C58E3D68786D22FC2FDB652D /* ZZOldArchiveEntryWriter.mm in Sources */ = {isa = PBXBuildFile; fileRef = F99013C5F860E966821634F8C46A61B4 /* ZZOldArchiveEntryWriter.mm */; };
-		79D798E52A97DC670E387A5996CE930E /* ZZError.h in Headers */ = {isa = PBXBuildFile; fileRef = 735018EAF60C75826EC8A02A37EE06BF /* ZZError.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7D2097E544FB134DFE98423A96C928A7 /* ZZArchiveEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = 72C769C5C468259A3A021DD544343766 /* ZZArchiveEntry.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7DA58739CA331CD3D72C93253F7BF845 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D3A496B707FABD8B9F82E863B561EC8 /* CoreServices.framework */; };
-		82B7202ED3CD68E354B886E32F41FED5 /* ZZNewArchiveEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = DFFFEBD6D16EAF9DDB18BF7F0E2C6EAA /* ZZNewArchiveEntry.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		836F301F519FA638939BC9182EE58B23 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CDDAB69FD7E19C9CC1A8065BD2F782 /* Cocoa.framework */; };
-		8B59CF01473A7AF25FEB9980919F4F83 /* ZZDataChannelOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = 0916486D1261FF2EB97C1BF597D8C6BD /* ZZDataChannelOutput.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		8F377EF0B7A53F1F4E732E1CF0553D2E /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = D91957E73E7A86A1822BD9246D4B3B9C /* AFURLRequestSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		943B0E841BCF6F8764BDE61E88B6384D /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C9ECFDC47D044D6BA8EC8709DE6B0FEB /* AFNetworkReachabilityManager.m */; };
-		94CFA913793136EC834190AA222860DE /* ZZDataProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 06C083FDE0B9A78EEA3179657BBA013D /* ZZDataProvider.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		9729321C30C3A4555FEEE05600007284 /* ZZInflateInputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 91C107D2C14D5EF219FD559FED913655 /* ZZInflateInputStream.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		99D84B2463A3EE9AB59B8A7851917611 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CDDAB69FD7E19C9CC1A8065BD2F782 /* Cocoa.framework */; };
-		9C6552E4944D6B1B188493E4242C552B /* ZZChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = B60123B9457B9CED3E68324F3C380ACC /* ZZChannel.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		9D0CFEEB0AAA7E4EB54646785C8C85E4 /* ZZAESDecryptInputStream.mm in Sources */ = {isa = PBXBuildFile; fileRef = 86069577A14C24425E1290F6DF395A48 /* ZZAESDecryptInputStream.mm */; };
-		A1311D6BABB14147696961B75ABFB751 /* ZZNewArchiveEntry.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5C74B44DF9813646CC04A92B16C5198D /* ZZNewArchiveEntry.mm */; };
-		AEE9A30AE27F735C016C1052B8037D87 /* AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C0537140B2C66F9E5D5EFF24D5BCC5BD /* AFNetworking-dummy.m */; };
-		AFC4BD6067AFF2FAD5EBD3BC705E7A3C /* ZZArchiveEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 0191488EBA9FD0D3B4B96A4CA03F151F /* ZZArchiveEntry.m */; };
-		B1B148492553098ADD0EDA2354FC9B1A /* ZZError.m in Sources */ = {isa = PBXBuildFile; fileRef = 57BCBAAE0D7407BD50EF86E05988F323 /* ZZError.m */; };
-		B3139951DC6EB66DC5E1C8EE01D304E7 /* ZZArchive.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9BB191F1ECDDA51173F0917B96D7C224 /* ZZArchive.mm */; };
-		B420D5457D925EB68AAB4B797B5789A3 /* ZZOldArchiveEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = D984D91BBBD76BCA1400DFC38EFE75D2 /* ZZOldArchiveEntry.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		B6DD0009ABF1D966C6B29C44375FED87 /* ZZFileChannelOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = 9672808FC8C770363A8598F5E6A5AFFA /* ZZFileChannelOutput.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		B74BE62C05C8D8443E27955FB39FB65C /* ZZConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 80FCA28373617F00181B136742070BA4 /* ZZConstants.m */; };
-		BBAB7DF16A00799991CC4A799D309468 /* ZZNewArchiveEntryWriter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E30B4B7E34648E7054C98287F39A01C /* ZZNewArchiveEntryWriter.mm */; };
-		CB78108EF70699D530C74852C23C06A1 /* ZZStandardCryptoEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08F30AAD87CC7D57C3D3445B1C9E84B4 /* ZZStandardCryptoEngine.cpp */; };
-		CBAB0B0CDFF8A4B276850AF1681CDF5F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 649A63C45903584BE8C2B20B86580629 /* SystemConfiguration.framework */; };
-		CC749AC3BA2B4D4B0F1400CF3CCBDEE0 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E472ABA2C471F6DC92655FEAA19EAB /* AFSecurityPolicy.m */; };
-		D56BB2F5706A827273E17804D85EC15B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CDDAB69FD7E19C9CC1A8065BD2F782 /* Cocoa.framework */; };
-		D7B46332EE8D1948755990F3996B8538 /* ZZDataChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = A0DD279CC5B8B121D4A8DBE872A51054 /* ZZDataChannel.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		D8EA5BE82388B0832526309E8046E87A /* ZZChannelOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = E0C8B1B5198D2006D240B6E544817BF3 /* ZZChannelOutput.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		DD31293557213A641DBFDBD280317E1A /* ZZNewArchiveEntryWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F1C07774FE907223C73FFC8CBB3EC8A /* ZZNewArchiveEntryWriter.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		DF4D703B4D64FACD58180CBD58373CEF /* ZZConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = E77375684AE28D76FD93B58A5245F893 /* ZZConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E15AB4B32AE64AAC60B4770147DB49CF /* ZZInflateInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F094F21B9FB3EC3EE5091808A68F014 /* ZZInflateInputStream.m */; };
-		E98B71403367C38A4CCC8C1B45C4B54A /* ZZStandardCryptoEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = D7D4B451DE97BAA4CEE1ECB84C597269 /* ZZStandardCryptoEngine.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		ED94AB4EE1CCEBDFCA0B924DC61C700C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2BE44B71D095255339F9020B6538258 /* Security.framework */; };
-		EED4D75C88BE775C747FEB866A070A96 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = FB4716FBA120056965B0BF9A3103B066 /* AFURLResponseSerialization.m */; };
-		F2972C1C4391A8DAC690E66338E768D3 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A044E03EEC8F3F41FBC0D15913ECC7AE /* AFHTTPSessionManager.m */; };
-		F6219E56EDB8596DDDB4B4BE6D5A842B /* ZZScopeGuard.h in Headers */ = {isa = PBXBuildFile; fileRef = B5FE54C90520BB43FEE6A6D170B07E53 /* ZZScopeGuard.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		FC74CC25296E0901A2B85DED637E6E39 /* ZZFileChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 11C538FC52B89E9692A803AF041A7A20 /* ZZFileChannel.m */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		20D0A79B58BC0C5BDAF11AD85A7180E8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E6B3DBDC1CA4A134669F39EEEA80C592;
-			remoteInfo = zipzap;
-		};
-		577819A0400FB4D84ED29528877768FD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 760576DD991A9AA44D36AA86DFCB7793;
-			remoteInfo = INAppStoreWindow;
-		};
-		E0858DDAEF87DFA3CF68FB3C588ADF3E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F1CD54B521C05F64664B50B361E42A34;
-			remoteInfo = AFNetworking;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		0191488EBA9FD0D3B4B96A4CA03F151F /* ZZArchiveEntry.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZArchiveEntry.m; path = ZipZap/ZZArchiveEntry.m; sourceTree = "<group>"; };
-		06C083FDE0B9A78EEA3179657BBA013D /* ZZDataProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZDataProvider.h; path = ZipZap/ZZDataProvider.h; sourceTree = "<group>"; };
-		07D3F2830E1578B6D801F2F448DEFDD9 /* ZZStandardDecryptInputStream.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = ZZStandardDecryptInputStream.mm; path = ZipZap/ZZStandardDecryptInputStream.mm; sourceTree = "<group>"; };
-		08F30AAD87CC7D57C3D3445B1C9E84B4 /* ZZStandardCryptoEngine.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = ZZStandardCryptoEngine.cpp; path = ZipZap/ZZStandardCryptoEngine.cpp; sourceTree = "<group>"; };
-		0916486D1261FF2EB97C1BF597D8C6BD /* ZZDataChannelOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZDataChannelOutput.h; path = ZipZap/ZZDataChannelOutput.h; sourceTree = "<group>"; };
-		0D8C843ED13847F521B79C9806D4DE9B /* zipzap-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "zipzap-prefix.pch"; sourceTree = "<group>"; };
-		11C538FC52B89E9692A803AF041A7A20 /* ZZFileChannel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZFileChannel.m; path = ZipZap/ZZFileChannel.m; sourceTree = "<group>"; };
-		13A515668290676F1294A59DF76D0BC9 /* ZZDataChannelOutput.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZDataChannelOutput.m; path = ZipZap/ZZDataChannelOutput.m; sourceTree = "<group>"; };
-		1A5F9A298C9C74EBE184AFACB1B5F32D /* Pods-NeoNotesMacOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NeoNotesMacOS-acknowledgements.plist"; sourceTree = "<group>"; };
-		1B97BEA1CF82799384FFC5D4616974BA /* ZZAESDecryptInputStream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZAESDecryptInputStream.h; path = ZipZap/ZZAESDecryptInputStream.h; sourceTree = "<group>"; };
-		2D3A496B707FABD8B9F82E863B561EC8 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/CoreServices.framework; sourceTree = DEVELOPER_DIR; };
-		2F094F21B9FB3EC3EE5091808A68F014 /* ZZInflateInputStream.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZInflateInputStream.m; path = ZipZap/ZZInflateInputStream.m; sourceTree = "<group>"; };
-		2F1C07774FE907223C73FFC8CBB3EC8A /* ZZNewArchiveEntryWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZNewArchiveEntryWriter.h; path = ZipZap/ZZNewArchiveEntryWriter.h; sourceTree = "<group>"; };
-		304B7A62ED9BAA96CC2C2971CD78C2A1 /* AFNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AFNetworking.xcconfig; sourceTree = "<group>"; };
-		3ECC258370CDA5EE27E3A6936E7F4852 /* ZZStoreOutputStream.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZStoreOutputStream.m; path = ZipZap/ZZStoreOutputStream.m; sourceTree = "<group>"; };
-		42C47B4739F9D6F433145AA03E8F6F6D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		45762899FEED3583E20455AAF8FB609C /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
-		4591613990208F2675426E5C12EB68F0 /* ZZHeaders.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZHeaders.h; path = ZipZap/ZZHeaders.h; sourceTree = "<group>"; };
-		47B4636DA32204738F09CB19A4ED103A /* libINAppStoreWindow.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libINAppStoreWindow.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		483EB50B4EE9E64BD55A5A607BAAF753 /* AFURLSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
-		4D2ABA5CB94B5B1569C487A87215E273 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
-		51A8DB22550677F528B0138E6908D54E /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
-		57BCBAAE0D7407BD50EF86E05988F323 /* ZZError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZError.m; path = ZipZap/ZZError.m; sourceTree = "<group>"; };
-		580121DF22501D7F2F6C26240692AD7A /* Pods-NeoNotesMacOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NeoNotesMacOS.release.xcconfig"; sourceTree = "<group>"; };
-		5C74B44DF9813646CC04A92B16C5198D /* ZZNewArchiveEntry.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = ZZNewArchiveEntry.mm; path = ZipZap/ZZNewArchiveEntry.mm; sourceTree = "<group>"; };
-		5FC171DFA0AEEA98BA5DCDD50C8CFDB7 /* Pods-NeoNotesMacOS-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NeoNotesMacOS-frameworks.sh"; sourceTree = "<group>"; };
-		6417288543BD9EB4714C11AE416C2DAB /* ZZDataChannel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZDataChannel.m; path = ZipZap/ZZDataChannel.m; sourceTree = "<group>"; };
-		649A63C45903584BE8C2B20B86580629 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
-		6BD56FFCBADACA11067920EFAB69E36E /* ZZDeflateOutputStream.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZDeflateOutputStream.m; path = ZipZap/ZZDeflateOutputStream.m; sourceTree = "<group>"; };
-		6D57FB6418BBC9A7B4F52E6D80C05785 /* ZZDeflateOutputStream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZDeflateOutputStream.h; path = ZipZap/ZZDeflateOutputStream.h; sourceTree = "<group>"; };
-		729370E0EF7205A9D3298D2C17AF97CB /* ZipZap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZipZap.h; path = ZipZap/ZipZap.h; sourceTree = "<group>"; };
-		72C769C5C468259A3A021DD544343766 /* ZZArchiveEntry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZArchiveEntry.h; path = ZipZap/ZZArchiveEntry.h; sourceTree = "<group>"; };
-		735018EAF60C75826EC8A02A37EE06BF /* ZZError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZError.h; path = ZipZap/ZZError.h; sourceTree = "<group>"; };
-		790F52B22ADB920F655C504EF3205CCD /* ZZFileChannelOutput.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZFileChannelOutput.m; path = ZipZap/ZZFileChannelOutput.m; sourceTree = "<group>"; };
-		7E30B4B7E34648E7054C98287F39A01C /* ZZNewArchiveEntryWriter.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = ZZNewArchiveEntryWriter.mm; path = ZipZap/ZZNewArchiveEntryWriter.mm; sourceTree = "<group>"; };
-		7F45CB46A053FCAC0F8683298A25D474 /* AFNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-prefix.pch"; sourceTree = "<group>"; };
-		7F49CB280BE5843BE67DF8650A2864E6 /* ZZArchive.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZArchive.h; path = ZipZap/ZZArchive.h; sourceTree = "<group>"; };
-		80FCA28373617F00181B136742070BA4 /* ZZConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZConstants.m; path = ZipZap/ZZConstants.m; sourceTree = "<group>"; };
-		86069577A14C24425E1290F6DF395A48 /* ZZAESDecryptInputStream.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = ZZAESDecryptInputStream.mm; path = ZipZap/ZZAESDecryptInputStream.mm; sourceTree = "<group>"; };
-		8D460B4738B5FDEB86BBFC4102B299E0 /* libPods-NeoNotesMacOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NeoNotesMacOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		91C107D2C14D5EF219FD559FED913655 /* ZZInflateInputStream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZInflateInputStream.h; path = ZipZap/ZZInflateInputStream.h; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9672808FC8C770363A8598F5E6A5AFFA /* ZZFileChannelOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZFileChannelOutput.h; path = ZipZap/ZZFileChannelOutput.h; sourceTree = "<group>"; };
-		9A13B093573A921E44454C410C7051C8 /* ZZArchiveEntryWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZArchiveEntryWriter.h; path = ZipZap/ZZArchiveEntryWriter.h; sourceTree = "<group>"; };
-		9A3999349F327ACC3443A581CD40BBC0 /* zipzap.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = zipzap.xcconfig; sourceTree = "<group>"; };
-		9BB191F1ECDDA51173F0917B96D7C224 /* ZZArchive.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = ZZArchive.mm; path = ZipZap/ZZArchive.mm; sourceTree = "<group>"; };
-		9E4ADF886DBBF34F3257494B890E2E98 /* zipzap-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "zipzap-dummy.m"; sourceTree = "<group>"; };
-		9E4AED09E302F46369A0414EAC9C7862 /* ZZStandardDecryptInputStream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZStandardDecryptInputStream.h; path = ZipZap/ZZStandardDecryptInputStream.h; sourceTree = "<group>"; };
-		A044E03EEC8F3F41FBC0D15913ECC7AE /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = AFNetworking/AFHTTPSessionManager.m; sourceTree = "<group>"; };
-		A0DD279CC5B8B121D4A8DBE872A51054 /* ZZDataChannel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZDataChannel.h; path = ZipZap/ZZDataChannel.h; sourceTree = "<group>"; };
-		A26E028E26F06C16D1E791C722A9B8C0 /* libzipzap.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libzipzap.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		A4A6DF15376C495BD95BBAB5177F6458 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/ApplicationServices.framework; sourceTree = DEVELOPER_DIR; };
-		A782EF70152C1C08A4C3F42CDE5221F9 /* ZZStoreOutputStream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZStoreOutputStream.h; path = ZipZap/ZZStoreOutputStream.h; sourceTree = "<group>"; };
-		AB934767C9A29DD27B265A5C632AE86C /* ZZOldArchiveEntry.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = ZZOldArchiveEntry.mm; path = ZipZap/ZZOldArchiveEntry.mm; sourceTree = "<group>"; };
-		AD29536F83C92933FE4129FA610F924F /* Pods-NeoNotesMacOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NeoNotesMacOS-dummy.m"; sourceTree = "<group>"; };
-		AEDFCC776D5CB2E93C2AFF1BFE6F6E36 /* ZZOldArchiveEntryWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZOldArchiveEntryWriter.h; path = ZipZap/ZZOldArchiveEntryWriter.h; sourceTree = "<group>"; };
-		B5FE54C90520BB43FEE6A6D170B07E53 /* ZZScopeGuard.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZScopeGuard.h; path = ZipZap/ZZScopeGuard.h; sourceTree = "<group>"; };
-		B60123B9457B9CED3E68324F3C380ACC /* ZZChannel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZChannel.h; path = ZipZap/ZZChannel.h; sourceTree = "<group>"; };
-		B9E5D0313BC04EEE3D643637A32A9348 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
-		BE61CCDEA637134DADDD2ECFC3E60640 /* AFURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
-		C008C8EA3AE0899EC8B1F2762B351136 /* Pods-NeoNotesMacOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NeoNotesMacOS-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C0537140B2C66F9E5D5EFF24D5BCC5BD /* AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AFNetworking-dummy.m"; sourceTree = "<group>"; };
-		C0E472ABA2C471F6DC92655FEAA19EAB /* AFSecurityPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = AFNetworking/AFSecurityPolicy.m; sourceTree = "<group>"; };
-		C2BE44B71D095255339F9020B6538258 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
-		C2FC98548ACA9A87089820453D5D4F73 /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
-		C83D2834CC266FB68285DA5E2790BE93 /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		C9ECFDC47D044D6BA8EC8709DE6B0FEB /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
-		D3CDDAB69FD7E19C9CC1A8065BD2F782 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
-		D7D4B451DE97BAA4CEE1ECB84C597269 /* ZZStandardCryptoEngine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZStandardCryptoEngine.h; path = ZipZap/ZZStandardCryptoEngine.h; sourceTree = "<group>"; };
-		D91957E73E7A86A1822BD9246D4B3B9C /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = AFNetworking/AFURLRequestSerialization.h; sourceTree = "<group>"; };
-		D984D91BBBD76BCA1400DFC38EFE75D2 /* ZZOldArchiveEntry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZOldArchiveEntry.h; path = ZipZap/ZZOldArchiveEntry.h; sourceTree = "<group>"; };
-		DFFFEBD6D16EAF9DDB18BF7F0E2C6EAA /* ZZNewArchiveEntry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZNewArchiveEntry.h; path = ZipZap/ZZNewArchiveEntry.h; sourceTree = "<group>"; };
-		E0C8B1B5198D2006D240B6E544817BF3 /* ZZChannelOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZChannelOutput.h; path = ZipZap/ZZChannelOutput.h; sourceTree = "<group>"; };
-		E64191BF46597DAD7477356E6CD32205 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
-		E77375684AE28D76FD93B58A5245F893 /* ZZConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZConstants.h; path = ZipZap/ZZConstants.h; sourceTree = "<group>"; };
-		EFA642EDF3947319B68C9DEE00571CF6 /* Pods-NeoNotesMacOS-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NeoNotesMacOS-resources.sh"; sourceTree = "<group>"; };
-		F5D8629E2344EB337E1DA2E5EE7C64EB /* ZZFileChannel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZFileChannel.h; path = ZipZap/ZZFileChannel.h; sourceTree = "<group>"; };
-		F9339985745B25652E550693916314FA /* Pods-NeoNotesMacOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NeoNotesMacOS.debug.xcconfig"; sourceTree = "<group>"; };
-		F99013C5F860E966821634F8C46A61B4 /* ZZOldArchiveEntryWriter.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = ZZOldArchiveEntryWriter.mm; path = ZipZap/ZZOldArchiveEntryWriter.mm; sourceTree = "<group>"; };
-		FB4716FBA120056965B0BF9A3103B066 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		0D11AA3234A7EA127F45A32770B46EE2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				62460977E56D63023CAD1E074188E9A9 /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		522EAD3016C17B1D536C6DE804F7838C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3184EEA3BFA93417842FB8B9B8F5E13B /* ApplicationServices.framework in Frameworks */,
-				D56BB2F5706A827273E17804D85EC15B /* Cocoa.framework in Frameworks */,
-				0E6861130E45B5D54E744BBA8796BABE /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A5B99514B2AADC64AF29C3E83DE62CD3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				99D84B2463A3EE9AB59B8A7851917611 /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B550EA12C166400B63E74BE77E1D984B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				836F301F519FA638939BC9182EE58B23 /* Cocoa.framework in Frameworks */,
-				7DA58739CA331CD3D72C93253F7BF845 /* CoreServices.framework in Frameworks */,
-				ED94AB4EE1CCEBDFCA0B924DC61C700C /* Security.framework in Frameworks */,
-				CBAB0B0CDFF8A4B276850AF1681CDF5F /* SystemConfiguration.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		029A70C52ECE4EEAA3E4A94413D30608 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				B8339307D9EFBB333AE3ED1BE7374FC6 /* OS X */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		0C993970C411715D59EAC2114E862696 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				9A3999349F327ACC3443A581CD40BBC0 /* zipzap.xcconfig */,
-				9E4ADF886DBBF34F3257494B890E2E98 /* zipzap-dummy.m */,
-				0D8C843ED13847F521B79C9806D4DE9B /* zipzap-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/zipzap";
-			sourceTree = "<group>";
-		};
-		1231159F9DF5351823BFEDF34000A9B5 /* Serialization */ = {
-			isa = PBXGroup;
-			children = (
-				D91957E73E7A86A1822BD9246D4B3B9C /* AFURLRequestSerialization.h */,
-				51A8DB22550677F528B0138E6908D54E /* AFURLRequestSerialization.m */,
-				B9E5D0313BC04EEE3D643637A32A9348 /* AFURLResponseSerialization.h */,
-				FB4716FBA120056965B0BF9A3103B066 /* AFURLResponseSerialization.m */,
-			);
-			name = Serialization;
-			sourceTree = "<group>";
-		};
-		1896CC9D0243278B1448C6AE8415FB0D /* AFNetworking */ = {
-			isa = PBXGroup;
-			children = (
-				C2FC98548ACA9A87089820453D5D4F73 /* AFNetworking.h */,
-				77FB8951244550431B4EBDCA129457F0 /* NSURLSession */,
-				275F5233441645AC82F554D4A3F65966 /* Reachability */,
-				ACFF5410F995C98EAD04F92A908E4621 /* Security */,
-				1231159F9DF5351823BFEDF34000A9B5 /* Serialization */,
-				4438A2D6B20EFD2DF91BDC1D8C814EF1 /* Support Files */,
-			);
-			path = AFNetworking;
-			sourceTree = "<group>";
-		};
-		275F5233441645AC82F554D4A3F65966 /* Reachability */ = {
-			isa = PBXGroup;
-			children = (
-				45762899FEED3583E20455AAF8FB609C /* AFNetworkReachabilityManager.h */,
-				C9ECFDC47D044D6BA8EC8709DE6B0FEB /* AFNetworkReachabilityManager.m */,
-			);
-			name = Reachability;
-			sourceTree = "<group>";
-		};
-		4438A2D6B20EFD2DF91BDC1D8C814EF1 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				304B7A62ED9BAA96CC2C2971CD78C2A1 /* AFNetworking.xcconfig */,
-				C0537140B2C66F9E5D5EFF24D5BCC5BD /* AFNetworking-dummy.m */,
-				7F45CB46A053FCAC0F8683298A25D474 /* AFNetworking-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/AFNetworking";
-			sourceTree = "<group>";
-		};
-		51D988238C3FB23BC4E6D7F713F035AC /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				8959302EA824E04B43D6648605E77162 /* Pods-NeoNotesMacOS */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		77FB8951244550431B4EBDCA129457F0 /* NSURLSession */ = {
-			isa = PBXGroup;
-			children = (
-				E64191BF46597DAD7477356E6CD32205 /* AFHTTPSessionManager.h */,
-				A044E03EEC8F3F41FBC0D15913ECC7AE /* AFHTTPSessionManager.m */,
-				483EB50B4EE9E64BD55A5A607BAAF753 /* AFURLSessionManager.h */,
-				BE61CCDEA637134DADDD2ECFC3E60640 /* AFURLSessionManager.m */,
-			);
-			name = NSURLSession;
-			sourceTree = "<group>";
-		};
-		7DB346D0F39D3F0E887471402A8071AB = {
-			isa = PBXGroup;
-			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				029A70C52ECE4EEAA3E4A94413D30608 /* Frameworks */,
-				DB8C46A97B67FFE8322E382A5CF82290 /* Pods */,
-				EC83204E88E9E6A3DDBA2CA0B3762678 /* Products */,
-				51D988238C3FB23BC4E6D7F713F035AC /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		8959302EA824E04B43D6648605E77162 /* Pods-NeoNotesMacOS */ = {
-			isa = PBXGroup;
-			children = (
-				C008C8EA3AE0899EC8B1F2762B351136 /* Pods-NeoNotesMacOS-acknowledgements.markdown */,
-				1A5F9A298C9C74EBE184AFACB1B5F32D /* Pods-NeoNotesMacOS-acknowledgements.plist */,
-				AD29536F83C92933FE4129FA610F924F /* Pods-NeoNotesMacOS-dummy.m */,
-				5FC171DFA0AEEA98BA5DCDD50C8CFDB7 /* Pods-NeoNotesMacOS-frameworks.sh */,
-				EFA642EDF3947319B68C9DEE00571CF6 /* Pods-NeoNotesMacOS-resources.sh */,
-				F9339985745B25652E550693916314FA /* Pods-NeoNotesMacOS.debug.xcconfig */,
-				580121DF22501D7F2F6C26240692AD7A /* Pods-NeoNotesMacOS.release.xcconfig */,
-			);
-			name = "Pods-NeoNotesMacOS";
-			path = "Target Support Files/Pods-NeoNotesMacOS";
-			sourceTree = "<group>";
-		};
-		A29D6A7F19643F5B338EEE48EF7F0DFE /* zipzap */ = {
-			isa = PBXGroup;
-			children = (
-				729370E0EF7205A9D3298D2C17AF97CB /* ZipZap.h */,
-				1B97BEA1CF82799384FFC5D4616974BA /* ZZAESDecryptInputStream.h */,
-				86069577A14C24425E1290F6DF395A48 /* ZZAESDecryptInputStream.mm */,
-				7F49CB280BE5843BE67DF8650A2864E6 /* ZZArchive.h */,
-				9BB191F1ECDDA51173F0917B96D7C224 /* ZZArchive.mm */,
-				72C769C5C468259A3A021DD544343766 /* ZZArchiveEntry.h */,
-				0191488EBA9FD0D3B4B96A4CA03F151F /* ZZArchiveEntry.m */,
-				9A13B093573A921E44454C410C7051C8 /* ZZArchiveEntryWriter.h */,
-				B60123B9457B9CED3E68324F3C380ACC /* ZZChannel.h */,
-				E0C8B1B5198D2006D240B6E544817BF3 /* ZZChannelOutput.h */,
-				E77375684AE28D76FD93B58A5245F893 /* ZZConstants.h */,
-				80FCA28373617F00181B136742070BA4 /* ZZConstants.m */,
-				A0DD279CC5B8B121D4A8DBE872A51054 /* ZZDataChannel.h */,
-				6417288543BD9EB4714C11AE416C2DAB /* ZZDataChannel.m */,
-				0916486D1261FF2EB97C1BF597D8C6BD /* ZZDataChannelOutput.h */,
-				13A515668290676F1294A59DF76D0BC9 /* ZZDataChannelOutput.m */,
-				06C083FDE0B9A78EEA3179657BBA013D /* ZZDataProvider.h */,
-				6D57FB6418BBC9A7B4F52E6D80C05785 /* ZZDeflateOutputStream.h */,
-				6BD56FFCBADACA11067920EFAB69E36E /* ZZDeflateOutputStream.m */,
-				735018EAF60C75826EC8A02A37EE06BF /* ZZError.h */,
-				57BCBAAE0D7407BD50EF86E05988F323 /* ZZError.m */,
-				F5D8629E2344EB337E1DA2E5EE7C64EB /* ZZFileChannel.h */,
-				11C538FC52B89E9692A803AF041A7A20 /* ZZFileChannel.m */,
-				9672808FC8C770363A8598F5E6A5AFFA /* ZZFileChannelOutput.h */,
-				790F52B22ADB920F655C504EF3205CCD /* ZZFileChannelOutput.m */,
-				4591613990208F2675426E5C12EB68F0 /* ZZHeaders.h */,
-				91C107D2C14D5EF219FD559FED913655 /* ZZInflateInputStream.h */,
-				2F094F21B9FB3EC3EE5091808A68F014 /* ZZInflateInputStream.m */,
-				DFFFEBD6D16EAF9DDB18BF7F0E2C6EAA /* ZZNewArchiveEntry.h */,
-				5C74B44DF9813646CC04A92B16C5198D /* ZZNewArchiveEntry.mm */,
-				2F1C07774FE907223C73FFC8CBB3EC8A /* ZZNewArchiveEntryWriter.h */,
-				7E30B4B7E34648E7054C98287F39A01C /* ZZNewArchiveEntryWriter.mm */,
-				D984D91BBBD76BCA1400DFC38EFE75D2 /* ZZOldArchiveEntry.h */,
-				AB934767C9A29DD27B265A5C632AE86C /* ZZOldArchiveEntry.mm */,
-				AEDFCC776D5CB2E93C2AFF1BFE6F6E36 /* ZZOldArchiveEntryWriter.h */,
-				F99013C5F860E966821634F8C46A61B4 /* ZZOldArchiveEntryWriter.mm */,
-				B5FE54C90520BB43FEE6A6D170B07E53 /* ZZScopeGuard.h */,
-				08F30AAD87CC7D57C3D3445B1C9E84B4 /* ZZStandardCryptoEngine.cpp */,
-				D7D4B451DE97BAA4CEE1ECB84C597269 /* ZZStandardCryptoEngine.h */,
-				9E4AED09E302F46369A0414EAC9C7862 /* ZZStandardDecryptInputStream.h */,
-				07D3F2830E1578B6D801F2F448DEFDD9 /* ZZStandardDecryptInputStream.mm */,
-				A782EF70152C1C08A4C3F42CDE5221F9 /* ZZStoreOutputStream.h */,
-				3ECC258370CDA5EE27E3A6936E7F4852 /* ZZStoreOutputStream.m */,
-				0C993970C411715D59EAC2114E862696 /* Support Files */,
-			);
-			path = zipzap;
-			sourceTree = "<group>";
-		};
-		ACFF5410F995C98EAD04F92A908E4621 /* Security */ = {
-			isa = PBXGroup;
-			children = (
-				4D2ABA5CB94B5B1569C487A87215E273 /* AFSecurityPolicy.h */,
-				C0E472ABA2C471F6DC92655FEAA19EAB /* AFSecurityPolicy.m */,
-			);
-			name = Security;
-			sourceTree = "<group>";
-		};
-		B8339307D9EFBB333AE3ED1BE7374FC6 /* OS X */ = {
-			isa = PBXGroup;
-			children = (
-				A4A6DF15376C495BD95BBAB5177F6458 /* ApplicationServices.framework */,
-				D3CDDAB69FD7E19C9CC1A8065BD2F782 /* Cocoa.framework */,
-				2D3A496B707FABD8B9F82E863B561EC8 /* CoreServices.framework */,
-				42C47B4739F9D6F433145AA03E8F6F6D /* Foundation.framework */,
-				C2BE44B71D095255339F9020B6538258 /* Security.framework */,
-				649A63C45903584BE8C2B20B86580629 /* SystemConfiguration.framework */,
-			);
-			name = "OS X";
-			sourceTree = "<group>";
-		};
-		DB8C46A97B67FFE8322E382A5CF82290 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				1896CC9D0243278B1448C6AE8415FB0D /* AFNetworking */,
-				A29D6A7F19643F5B338EEE48EF7F0DFE /* zipzap */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		EC83204E88E9E6A3DDBA2CA0B3762678 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C83D2834CC266FB68285DA5E2790BE93 /* libAFNetworking.a */,
-				47B4636DA32204738F09CB19A4ED103A /* libINAppStoreWindow.a */,
-				8D460B4738B5FDEB86BBFC4102B299E0 /* libPods-NeoNotesMacOS.a */,
-				A26E028E26F06C16D1E791C722A9B8C0 /* libzipzap.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		7D9FAD38725772787AA0723A58C36799 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				43DF71878FEE53F9C6AA9FE25AE25BEB /* ZipZap.h in Headers */,
-				057E6BAEE5AC84B3B948EE6781A26EF4 /* ZZAESDecryptInputStream.h in Headers */,
-				55B1A05862444104930E8E3573E3AA5F /* ZZArchive.h in Headers */,
-				7D2097E544FB134DFE98423A96C928A7 /* ZZArchiveEntry.h in Headers */,
-				063ABFD86B3B4EE2D44A0BFD4C6730D0 /* ZZArchiveEntryWriter.h in Headers */,
-				9C6552E4944D6B1B188493E4242C552B /* ZZChannel.h in Headers */,
-				D8EA5BE82388B0832526309E8046E87A /* ZZChannelOutput.h in Headers */,
-				DF4D703B4D64FACD58180CBD58373CEF /* ZZConstants.h in Headers */,
-				D7B46332EE8D1948755990F3996B8538 /* ZZDataChannel.h in Headers */,
-				8B59CF01473A7AF25FEB9980919F4F83 /* ZZDataChannelOutput.h in Headers */,
-				94CFA913793136EC834190AA222860DE /* ZZDataProvider.h in Headers */,
-				7633091877A1FE6E5D70E86056A650E2 /* ZZDeflateOutputStream.h in Headers */,
-				79D798E52A97DC670E387A5996CE930E /* ZZError.h in Headers */,
-				1CED2EE853B11FE99BB1BE7DDF1B4D1D /* ZZFileChannel.h in Headers */,
-				B6DD0009ABF1D966C6B29C44375FED87 /* ZZFileChannelOutput.h in Headers */,
-				350BF6FDB9F6B927A851368CE8B3B832 /* ZZHeaders.h in Headers */,
-				9729321C30C3A4555FEEE05600007284 /* ZZInflateInputStream.h in Headers */,
-				82B7202ED3CD68E354B886E32F41FED5 /* ZZNewArchiveEntry.h in Headers */,
-				DD31293557213A641DBFDBD280317E1A /* ZZNewArchiveEntryWriter.h in Headers */,
-				B420D5457D925EB68AAB4B797B5789A3 /* ZZOldArchiveEntry.h in Headers */,
-				34E17F0E73DC89EACFE3A1AAA62C9657 /* ZZOldArchiveEntryWriter.h in Headers */,
-				F6219E56EDB8596DDDB4B4BE6D5A842B /* ZZScopeGuard.h in Headers */,
-				E98B71403367C38A4CCC8C1B45C4B54A /* ZZStandardCryptoEngine.h in Headers */,
-				20FBD84E6100A078E4C7A5D25EE63FF9 /* ZZStandardDecryptInputStream.h in Headers */,
-				3276C55F12B91479BAEB4EFDB9736B5C /* ZZStoreOutputStream.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A41EE4477A8C31F557414CAD8AEDC039 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				147132EB8ECC0C9A2997455B4875B27A /* AFHTTPSessionManager.h in Headers */,
-				744BDA42C38330C1E88ECA1FECBFE660 /* AFNetworking.h in Headers */,
-				607E909A1FE0E95FBB7B2E7099262A47 /* AFNetworkReachabilityManager.h in Headers */,
-				0B570DE4FB41EE8963514154DE380813 /* AFSecurityPolicy.h in Headers */,
-				8F377EF0B7A53F1F4E732E1CF0553D2E /* AFURLRequestSerialization.h in Headers */,
-				01D310E2DAC58192E209FFA896339578 /* AFURLResponseSerialization.h in Headers */,
-				4CD3642B812E501998987D3455C4508C /* AFURLSessionManager.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B36A83643BE7F5A332AEE3D4D4F058EA /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
-/* Begin PBXNativeTarget section */
-		760576DD991A9AA44D36AA86DFCB7793 /* INAppStoreWindow */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 44297F492C8E98E02B565C1282A05663 /* Build configuration list for PBXNativeTarget "INAppStoreWindow" */;
-			buildPhases = (
-				BA04B63F8F30E11FBFE61FBF8D4696ED /* Sources */,
-				A5B99514B2AADC64AF29C3E83DE62CD3 /* Frameworks */,
-				B36A83643BE7F5A332AEE3D4D4F058EA /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = INAppStoreWindow;
-			productName = INAppStoreWindow;
-			productReference = 47B4636DA32204738F09CB19A4ED103A /* libINAppStoreWindow.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		AE40F12D1662AE9EB5F7FE9FB1D4460F /* Pods-NeoNotesMacOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2B239D7E30C7F47FA129EDAEAA536C8B /* Build configuration list for PBXNativeTarget "Pods-NeoNotesMacOS" */;
-			buildPhases = (
-				643A2888A55E9820F30AC84738688008 /* Sources */,
-				0D11AA3234A7EA127F45A32770B46EE2 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BC491184E76023A4E16C39426C9E63F3 /* PBXTargetDependency */,
-				BB9B4BCC9218D629D6089C9B28E62279 /* PBXTargetDependency */,
-				7310F0ECD493732C91CE93A5CDA404B6 /* PBXTargetDependency */,
-			);
-			name = "Pods-NeoNotesMacOS";
-			productName = "Pods-NeoNotesMacOS";
-			productReference = 8D460B4738B5FDEB86BBFC4102B299E0 /* libPods-NeoNotesMacOS.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		E6B3DBDC1CA4A134669F39EEEA80C592 /* zipzap */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 53CB14203783B45E34920DD98B50A25C /* Build configuration list for PBXNativeTarget "zipzap" */;
-			buildPhases = (
-				DCAD06812CB06409336C8F0B916ED286 /* Sources */,
-				522EAD3016C17B1D536C6DE804F7838C /* Frameworks */,
-				7D9FAD38725772787AA0723A58C36799 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = zipzap;
-			productName = zipzap;
-			productReference = A26E028E26F06C16D1E791C722A9B8C0 /* libzipzap.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		F1CD54B521C05F64664B50B361E42A34 /* AFNetworking */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 11319947230CC2946E2E04D50506BB0C /* Build configuration list for PBXNativeTarget "AFNetworking" */;
-			buildPhases = (
-				8C221D26D53B79E867555434CBB25319 /* Sources */,
-				B550EA12C166400B63E74BE77E1D984B /* Frameworks */,
-				A41EE4477A8C31F557414CAD8AEDC039 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = AFNetworking;
-			productName = AFNetworking;
-			productReference = C83D2834CC266FB68285DA5E2790BE93 /* libAFNetworking.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0700;
-			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = EC83204E88E9E6A3DDBA2CA0B3762678 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				F1CD54B521C05F64664B50B361E42A34 /* AFNetworking */,
-				760576DD991A9AA44D36AA86DFCB7793 /* INAppStoreWindow */,
-				AE40F12D1662AE9EB5F7FE9FB1D4460F /* Pods-NeoNotesMacOS */,
-				E6B3DBDC1CA4A134669F39EEEA80C592 /* zipzap */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXSourcesBuildPhase section */
-		643A2888A55E9820F30AC84738688008 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				43FAEF57BCD6FF29E0B67F74187EE8D7 /* Pods-NeoNotesMacOS-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8C221D26D53B79E867555434CBB25319 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F2972C1C4391A8DAC690E66338E768D3 /* AFHTTPSessionManager.m in Sources */,
-				AEE9A30AE27F735C016C1052B8037D87 /* AFNetworking-dummy.m in Sources */,
-				943B0E841BCF6F8764BDE61E88B6384D /* AFNetworkReachabilityManager.m in Sources */,
-				CC749AC3BA2B4D4B0F1400CF3CCBDEE0 /* AFSecurityPolicy.m in Sources */,
-				3455BE0F9A1389D9FEEDFB3753DC6404 /* AFURLRequestSerialization.m in Sources */,
-				EED4D75C88BE775C747FEB866A070A96 /* AFURLResponseSerialization.m in Sources */,
-				2C0E1B2717D5394E78AD7114040BF551 /* AFURLSessionManager.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BA04B63F8F30E11FBFE61FBF8D4696ED /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DCAD06812CB06409336C8F0B916ED286 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				563957F71AD2BECFEE7E28CEE7706B00 /* zipzap-dummy.m in Sources */,
-				9D0CFEEB0AAA7E4EB54646785C8C85E4 /* ZZAESDecryptInputStream.mm in Sources */,
-				B3139951DC6EB66DC5E1C8EE01D304E7 /* ZZArchive.mm in Sources */,
-				AFC4BD6067AFF2FAD5EBD3BC705E7A3C /* ZZArchiveEntry.m in Sources */,
-				B74BE62C05C8D8443E27955FB39FB65C /* ZZConstants.m in Sources */,
-				6AB830947471CC70965E122662832584 /* ZZDataChannel.m in Sources */,
-				12E803E3DF93037F88C1FBEC3F3A5E80 /* ZZDataChannelOutput.m in Sources */,
-				2AAE7F1AF3496732ABB13230CDE400F5 /* ZZDeflateOutputStream.m in Sources */,
-				B1B148492553098ADD0EDA2354FC9B1A /* ZZError.m in Sources */,
-				FC74CC25296E0901A2B85DED637E6E39 /* ZZFileChannel.m in Sources */,
-				64B8237F36750643DD756FEB44F5A5A0 /* ZZFileChannelOutput.m in Sources */,
-				E15AB4B32AE64AAC60B4770147DB49CF /* ZZInflateInputStream.m in Sources */,
-				A1311D6BABB14147696961B75ABFB751 /* ZZNewArchiveEntry.mm in Sources */,
-				BBAB7DF16A00799991CC4A799D309468 /* ZZNewArchiveEntryWriter.mm in Sources */,
-				383FBAC759AC93DFBA1E6231D1998EC3 /* ZZOldArchiveEntry.mm in Sources */,
-				79417799C58E3D68786D22FC2FDB652D /* ZZOldArchiveEntryWriter.mm in Sources */,
-				CB78108EF70699D530C74852C23C06A1 /* ZZStandardCryptoEngine.cpp in Sources */,
-				13674A344566998D9B8FF66CB05C91EF /* ZZStandardDecryptInputStream.mm in Sources */,
-				0C1FC34B0F074769A87485F279AD0A3E /* ZZStoreOutputStream.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		7310F0ECD493732C91CE93A5CDA404B6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = zipzap;
-			target = E6B3DBDC1CA4A134669F39EEEA80C592 /* zipzap */;
-			targetProxy = 20D0A79B58BC0C5BDAF11AD85A7180E8 /* PBXContainerItemProxy */;
-		};
-		BB9B4BCC9218D629D6089C9B28E62279 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = INAppStoreWindow;
-			target = 760576DD991A9AA44D36AA86DFCB7793 /* INAppStoreWindow */;
-			targetProxy = 577819A0400FB4D84ED29528877768FD /* PBXContainerItemProxy */;
-		};
-		BC491184E76023A4E16C39426C9E63F3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = AFNetworking;
-			target = F1CD54B521C05F64664B50B361E42A34 /* AFNetworking */;
-			targetProxy = E0858DDAEF87DFA3CF68FB3C588ADF3E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin XCBuildConfiguration section */
-		0577E960F68FF02722D75DA2D211E3A8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_DEBUG=1",
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				ONLY_ACTIVE_ARCH = YES;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Debug;
-		};
-		131BF6D56EB30B993E272241969DEB73 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 304B7A62ED9BAA96CC2C2971CD78C2A1 /* AFNetworking.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				EXECUTABLE_PREFIX = lib;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = macosx;
-			};
-			name = Release;
-		};
-		1E58F68C1B87EE4083186E28D8B6CCA0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				EXECUTABLE_PREFIX = lib;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/INAppStoreWindow/INAppStoreWindow-prefix.pch";
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = macosx;
-			};
-			name = Debug;
-		};
-		2C1D5979FEDCF84923D573D8FA539E31 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				EXECUTABLE_PREFIX = lib;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/INAppStoreWindow/INAppStoreWindow-prefix.pch";
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = macosx;
-			};
-			name = Release;
-		};
-		41E2C74D85BA24B7694B1E1451CFAAE7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F9339985745B25652E550693916314FA /* Pods-NeoNotesMacOS.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				EXECUTABLE_PREFIX = lib;
-				GCC_NO_COMMON_BLOCKS = YES;
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		578820E498FFD85CA5D93A33D365FBED /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		6C9EE154B5E9DF6A81FD67FD6960FFC5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9A3999349F327ACC3443A581CD40BBC0 /* zipzap.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				EXECUTABLE_PREFIX = lib;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/zipzap/zipzap-prefix.pch";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = macosx;
-			};
-			name = Debug;
-		};
-		A7617156EB5E36DF04DA017FE6D5E187 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 580121DF22501D7F2F6C26240692AD7A /* Pods-NeoNotesMacOS.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				EXECUTABLE_PREFIX = lib;
-				GCC_NO_COMMON_BLOCKS = YES;
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		C2CE07D0890966C002BD201CA8C0B47B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 304B7A62ED9BAA96CC2C2971CD78C2A1 /* AFNetworking.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				EXECUTABLE_PREFIX = lib;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = macosx;
-			};
-			name = Debug;
-		};
-		E782F97584381C066FFCF16E0B9947D5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9A3999349F327ACC3443A581CD40BBC0 /* zipzap.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				EXECUTABLE_PREFIX = lib;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/zipzap/zipzap-prefix.pch";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = macosx;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		11319947230CC2946E2E04D50506BB0C /* Build configuration list for PBXNativeTarget "AFNetworking" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C2CE07D0890966C002BD201CA8C0B47B /* Debug */,
-				131BF6D56EB30B993E272241969DEB73 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2B239D7E30C7F47FA129EDAEAA536C8B /* Build configuration list for PBXNativeTarget "Pods-NeoNotesMacOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				41E2C74D85BA24B7694B1E1451CFAAE7 /* Debug */,
-				A7617156EB5E36DF04DA017FE6D5E187 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0577E960F68FF02722D75DA2D211E3A8 /* Debug */,
-				578820E498FFD85CA5D93A33D365FBED /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		44297F492C8E98E02B565C1282A05663 /* Build configuration list for PBXNativeTarget "INAppStoreWindow" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1E58F68C1B87EE4083186E28D8B6CCA0 /* Debug */,
-				2C1D5979FEDCF84923D573D8FA539E31 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		53CB14203783B45E34920DD98B50A25C /* Build configuration list for PBXNativeTarget "zipzap" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6C9EE154B5E9DF6A81FD67FD6960FFC5 /* Debug */,
-				E782F97584381C066FFCF16E0B9947D5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>01C9B3298A2E8DF723AFC673586C328F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>546753FAB97E420C13A25A9825136603</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Project</string>
+				</array>
+			</dict>
+		</dict>
+		<key>01D310E2DAC58192E209FFA896339578</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3E32CF5FB30790EBCF1A53F4ACA35523</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>01E834BA1D0201F54859F6BA464FAB95</key>
+		<dict>
+			<key>fileRef</key>
+			<string>77AFFCD705ED6D600CB0C3AA3039CD9E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>02463486A47413BC5E4B094BCAAF7086</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>AFNetworkReachabilityManager.m</string>
+			<key>path</key>
+			<string>AFNetworking/AFNetworkReachabilityManager.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>025421D1AFF6FD09C8E03AED8D1E752E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1DD068FAE272C435C00764C2F9B55B44</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>029A70C52ECE4EEAA3E4A94413D30608</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B8339307D9EFBB333AE3ED1BE7374FC6</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>03D955205784E54B66FE1BF411E33C23</key>
+		<dict>
+			<key>fileRef</key>
+			<string>66A2951C6C7C1B5D0CE175071C28BBF2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Project</string>
+				</array>
+			</dict>
+		</dict>
+		<key>04B1C67CB1E97CB935404AD77645D208</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>ZZArchiveEntry.m</string>
+			<key>path</key>
+			<string>ZipZap/ZZArchiveEntry.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>04BA6473631A9D7D1E6D128A83B8ACCE</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2EE3242ADF044EE5E78EDA413D62D080</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>04CFBDAF742D90B21C3816B91931FCC5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>ZZDeflateOutputStream.h</string>
+			<key>path</key>
+			<string>ZipZap/ZZDeflateOutputStream.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>05333E5DB1910CD63F7B4727FEA3221B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>ZZDeflateOutputStream.m</string>
+			<key>path</key>
+			<string>ZipZap/ZZDeflateOutputStream.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0577E960F68FF02722D75DA2D211E3A8</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_ANALYZER_NONNULL</key>
+				<string>YES</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>ENABLE_TESTABILITY</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>POD_CONFIGURATION_DEBUG=1</string>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>MACOSX_DEPLOYMENT_TARGET</key>
+				<string>10.11</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>STRIP_INSTALLED_PRODUCT</key>
+				<string>NO</string>
+				<key>SYMROOT</key>
+				<string>${SRCROOT}/../build</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>064388EBA18D6328D3B849EB01388ADE</key>
+		<dict>
+			<key>fileRef</key>
+			<string>91F5ED3040FC7981693D77BC1A1BFE8D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0A2B83F9AB9FCA9025B56B8D3796D289</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>6A19FAE9860A2B3E9CB4D90FCDB129A8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>0B570DE4FB41EE8963514154DE380813</key>
+		<dict>
+			<key>fileRef</key>
+			<string>374CF011B2D12C67F3338AD66C5AD361</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>0D4FEF44381B3CD16EFE5F8CAC01311F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>ZZAESDecryptInputStream.h</string>
+			<key>path</key>
+			<string>ZipZap/ZZAESDecryptInputStream.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0E71043C9AC1F2D9847A9E74D1D36FCC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C3FC961F5ACE0CB89FE5D4A75AEDC512</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F1165A72A71C1BE867F5C55574CE868</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DF79EFCC1FC1807F9741C669410FEF09</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F957CCD6B7080726F3C7C85B82C4DF5</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>4F7FE10E0260CF1F4F719C6694582FD3</string>
+				<string>682443710BD1B0A6D75E70E4326F7073</string>
+				<string>A3AA97583FBFAF9C758E014F0761B015</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>../Target Support Files/AFNetworking</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>11319947230CC2946E2E04D50506BB0C</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>C2CE07D0890966C002BD201CA8C0B47B</string>
+				<string>131BF6D56EB30B993E272241969DEB73</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>123D714B06A9CBCD93010579FDE498FB</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>libzipzap.a</string>
+			<key>path</key>
+			<string>libzipzap.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>131BF6D56EB30B993E272241969DEB73</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>4F7FE10E0260CF1F4F719C6694582FD3</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY</key>
+				<string>-</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>EXECUTABLE_PREFIX</key>
+				<string>lib</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/AFNetworking/AFNetworking-prefix.pch</string>
+				<key>MACOSX_DEPLOYMENT_TARGET</key>
+				<string>10.9</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PRIVATE_HEADERS_FOLDER_PATH</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string></string>
+				<key>SDKROOT</key>
+				<string>macosx</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>147132EB8ECC0C9A2997455B4875B27A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F7ED2DECE9F8A7152298193FC1F9F6D7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>181504AD3F3C5E6B75B13CA0F2B1EA24</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>AFURLRequestSerialization.m</string>
+			<key>path</key>
+			<string>AFNetworking/AFURLRequestSerialization.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>18AE3D978A27DDD69096D627DD577937</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>56D3D5462D497669FA29FE692D159E8F</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY</key>
+				<string>-</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>EXECUTABLE_PREFIX</key>
+				<string>lib</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/zipzap/zipzap-prefix.pch</string>
+				<key>MACOSX_DEPLOYMENT_TARGET</key>
+				<string>10.9</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PRIVATE_HEADERS_FOLDER_PATH</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string></string>
+				<key>SDKROOT</key>
+				<string>macosx</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>1A5F9A298C9C74EBE184AFACB1B5F32D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Pods-NeoNotesMacOS-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1DD068FAE272C435C00764C2F9B55B44</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>ZipZap.h</string>
+			<key>path</key>
+			<string>ZipZap/ZipZap.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>24BEAC8D05EEEE89AA7E2DE5E483293D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>ZZDataChannelOutput.m</string>
+			<key>path</key>
+			<string>ZipZap/ZZDataChannelOutput.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>266A6107C1EA5A2F1FDE24411BF0B193</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>libAFNetworking.a</string>
+			<key>path</key>
+			<string>libAFNetworking.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>27DFD73CAACE676E982CA2EFB50D4823</key>
+		<dict>
+			<key>fileRef</key>
+			<string>84DB86853A7FA510241AEFCDAA18CB4F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2948D155FDEA4850825F43E52527AA4F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>ZZArchive.mm</string>
+			<key>path</key>
+			<string>ZipZap/ZZArchive.mm</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>29D938E5447383085EFC10AC8D246BAF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>ADC67E7947A5923C3AD417FEA4675B36</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Project</string>
+				</array>
+			</dict>
+		</dict>
+		<key>2ADD4EEA30D2C3C457E1202B7DFFB1D2</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>B336304432A89128537BA8380CCE035B</string>
+			<key>buildPhases</key>
+			<array>
+				<string>F371CA8D58BCA9545788E4F52A79707C</string>
+				<string>B4F893594CE761FCA5127895F650F331</string>
+				<string>C7C75D53CBE8A82D2801ACED0AA84877</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>zipzap</string>
+			<key>productName</key>
+			<string>zipzap</string>
+			<key>productReference</key>
+			<string>123D714B06A9CBCD93010579FDE498FB</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
+		</dict>
+		<key>2C0E1B2717D5394E78AD7114040BF551</key>
+		<dict>
+			<key>fileRef</key>
+			<string>30993867C9E9386A46A23F97B965A7A5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2D3A496B707FABD8B9F82E863B561EC8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreServices.framework</string>
+			<key>path</key>
+			<string>Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/CoreServices.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>2D8E8EC45A3A1A1D94AE762CB5028504</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>0577E960F68FF02722D75DA2D211E3A8</string>
+				<string>578820E498FFD85CA5D93A33D365FBED</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>2EE3242ADF044EE5E78EDA413D62D080</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>ZZArchive.h</string>
+			<key>path</key>
+			<string>ZipZap/ZZArchive.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>30993867C9E9386A46A23F97B965A7A5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>AFURLSessionManager.m</string>
+			<key>path</key>
+			<string>AFNetworking/AFURLSessionManager.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>31BE55D0595664AA662C25840368E74F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F7ED2DECE9F8A7152298193FC1F9F6D7</string>
+				<string>8C431AA47445D6BE67F2041B90D0B96B</string>
+				<string>751EC57284D38045881B14C26938B6F4</string>
+				<string>30993867C9E9386A46A23F97B965A7A5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>NSURLSession</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>329071FA4A261510433A7EBD18FA5A3A</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>2ADD4EEA30D2C3C457E1202B7DFFB1D2</string>
+			<key>remoteInfo</key>
+			<string>zipzap</string>
+		</dict>
+		<key>32DE07215EBF43AB0B294E97B61062AD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>04B1C67CB1E97CB935404AD77645D208</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3455BE0F9A1389D9FEEDFB3753DC6404</key>
+		<dict>
+			<key>fileRef</key>
+			<string>181504AD3F3C5E6B75B13CA0F2B1EA24</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>355DCF0BB2CF0EABCF7DE116E00BCBA5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>EE5107F477CDD094AD338E26F58258CD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>36B09FF87F8F0C4CCC1B6DEF37F1192C</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6513994BC26673F606507CAB9E8F6F46</string>
+				<string>B6FB2D2844093D34328A2801F39CDEB2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>37449B6FBB37958107851B762C4084CF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3C39E918AE15E748321F1A3BF60A999B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Project</string>
+				</array>
+			</dict>
+		</dict>
+		<key>374CF011B2D12C67F3338AD66C5AD361</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AFSecurityPolicy.h</string>
+			<key>path</key>
+			<string>AFNetworking/AFSecurityPolicy.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>38CF70D37A89B8A5FCCA21170DFC2D2B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>ZZNewArchiveEntryWriter.h</string>
+			<key>path</key>
+			<string>ZipZap/ZZNewArchiveEntryWriter.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3C39E918AE15E748321F1A3BF60A999B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>ZZScopeGuard.h</string>
+			<key>path</key>
+			<string>ZipZap/ZZScopeGuard.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3DB842DAA6AC02ABB9BAFB896CA84554</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>56D3D5462D497669FA29FE692D159E8F</string>
+				<string>8F08751A8843F3E519DC654A7DE7B485</string>
+				<string>863998BC1FAD5713BEFC0E138EF081C2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>../Target Support Files/zipzap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3E32CF5FB30790EBCF1A53F4ACA35523</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AFURLResponseSerialization.h</string>
+			<key>path</key>
+			<string>AFNetworking/AFURLResponseSerialization.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3E6BA5C50F50DBC019F7B0FA8EAED28E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>ZZFileChannel.h</string>
+			<key>path</key>
+			<string>ZipZap/ZZFileChannel.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>42AFDF1B4791D8B80BF996EA2E852E94</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>ZZDataChannel.m</string>
+			<key>path</key>
+			<string>ZipZap/ZZDataChannel.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>42C47B4739F9D6F433145AA03E8F6F6D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>4421D761DB1BF1769348EB6E0E38EBEB</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>ZZStandardCryptoEngine.h</string>
+			<key>path</key>
+			<string>ZipZap/ZZStandardCryptoEngine.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4B3F95E4D55C5C16B22A5178EC91459D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3E6BA5C50F50DBC019F7B0FA8EAED28E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Project</string>
+				</array>
+			</dict>
+		</dict>
+		<key>4CD3642B812E501998987D3455C4508C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>751EC57284D38045881B14C26938B6F4</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>4D4E5C7F9474353EC0D701837E73F707</key>
+		<dict>
+			<key>fileRef</key>
+			<string>65570325708FA2B0D666551467F654CD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Project</string>
+				</array>
+			</dict>
+		</dict>
+		<key>4EB05AD2E2874880E490D06225739236</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F77870BAF5669F4E367368B2B05772C4</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Project</string>
+				</array>
+			</dict>
+		</dict>
+		<key>4F7FE10E0260CF1F4F719C6694582FD3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>AFNetworking.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>51D988238C3FB23BC4E6D7F713F035AC</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>8959302EA824E04B43D6648605E77162</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Targets Support Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5370102B29090FB0A7BC7C7D30900BB5</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>56D3D5462D497669FA29FE692D159E8F</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY</key>
+				<string>-</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>EXECUTABLE_PREFIX</key>
+				<string>lib</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/zipzap/zipzap-prefix.pch</string>
+				<key>MACOSX_DEPLOYMENT_TARGET</key>
+				<string>10.9</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PRIVATE_HEADERS_FOLDER_PATH</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string></string>
+				<key>SDKROOT</key>
+				<string>macosx</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>54213045D51151AFA7D3248403711E1E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B22A98E163DCD583E397A3EF408B0C00</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Project</string>
+				</array>
+			</dict>
+		</dict>
+		<key>546753FAB97E420C13A25A9825136603</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>ZZHeaders.h</string>
+			<key>path</key>
+			<string>ZipZap/ZZHeaders.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>54C3B3B248CBBAA2BCEAF3FC1AA1E7CA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>374CF011B2D12C67F3338AD66C5AD361</string>
+				<string>F51E9CAE8421ED8A7B675FD78C407245</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Security</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>56D3D5462D497669FA29FE692D159E8F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>zipzap.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>578820E498FFD85CA5D93A33D365FBED</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_ANALYZER_NONNULL</key>
+				<string>YES</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>POD_CONFIGURATION_RELEASE=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>MACOSX_DEPLOYMENT_TARGET</key>
+				<string>10.11</string>
+				<key>STRIP_INSTALLED_PRODUCT</key>
+				<string>NO</string>
+				<key>SYMROOT</key>
+				<string>${SRCROOT}/../build</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>580121DF22501D7F2F6C26240692AD7A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-NeoNotesMacOS.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5C81DDCDDDAE209777390E55A55BE003</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>ZZAESDecryptInputStream.mm</string>
+			<key>path</key>
+			<string>ZipZap/ZZAESDecryptInputStream.mm</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5FC171DFA0AEEA98BA5DCDD50C8CFDB7</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-NeoNotesMacOS-frameworks.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>607E909A1FE0E95FBB7B2E7099262A47</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6CE2AC0950328F91F5BA426B71D15EA6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>611CEDEC87AFCE0A44D1F725A9C838AE</key>
+		<dict>
+			<key>fileRef</key>
+			<string>38CF70D37A89B8A5FCCA21170DFC2D2B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Project</string>
+				</array>
+			</dict>
+		</dict>
+		<key>649A63C45903584BE8C2B20B86580629</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>SystemConfiguration.framework</string>
+			<key>path</key>
+			<string>Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/SystemConfiguration.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>64DEBD90EBC5EE9FF4FAE6349C962972</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>ZZDataProvider.h</string>
+			<key>path</key>
+			<string>ZipZap/ZZDataProvider.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6513994BC26673F606507CAB9E8F6F46</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6882D2F0604C8CDAB7781D9B6703BCC4</string>
+				<string>31BE55D0595664AA662C25840368E74F</string>
+				<string>B3590D0DA45A422EFED0CBFC2EDC9F64</string>
+				<string>54C3B3B248CBBAA2BCEAF3FC1AA1E7CA</string>
+				<string>E2A7037301B291AF9E6BD5AB13B7B7C7</string>
+				<string>0F957CCD6B7080726F3C7C85B82C4DF5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>AFNetworking</string>
+			<key>path</key>
+			<string>AFNetworking</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6543E171419518976DA87658177FE222</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A4A6DF15376C495BD95BBAB5177F6458</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>65570325708FA2B0D666551467F654CD</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>ZZStandardDecryptInputStream.h</string>
+			<key>path</key>
+			<string>ZipZap/ZZStandardDecryptInputStream.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>66A2951C6C7C1B5D0CE175071C28BBF2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>ZZOldArchiveEntry.h</string>
+			<key>path</key>
+			<string>ZipZap/ZZOldArchiveEntry.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>682443710BD1B0A6D75E70E4326F7073</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>AFNetworking-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6882D2F0604C8CDAB7781D9B6703BCC4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AFNetworking.h</string>
+			<key>path</key>
+			<string>AFNetworking/AFNetworking.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6A028252CF67B84592584BE4AF605FB0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>42C47B4739F9D6F433145AA03E8F6F6D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6A19FAE9860A2B3E9CB4D90FCDB129A8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>AD29536F83C92933FE4129FA610F924F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6A29BD105042E34CDE4394654470359D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>ZZNewArchiveEntry.mm</string>
+			<key>path</key>
+			<string>ZipZap/ZZNewArchiveEntry.mm</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6CE2AC0950328F91F5BA426B71D15EA6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AFNetworkReachabilityManager.h</string>
+			<key>path</key>
+			<string>AFNetworking/AFNetworkReachabilityManager.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6D7D87E22DE26947F565703746C6ED54</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>ZZStoreOutputStream.m</string>
+			<key>path</key>
+			<string>ZipZap/ZZStoreOutputStream.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6E054AC0CE9C09C33F1FB6FE8C505E22</key>
+		<dict>
+			<key>fileRef</key>
+			<string>799A0495CFA1B00DCB1680C20C5CE1C4</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Project</string>
+				</array>
+			</dict>
+		</dict>
+		<key>73F8BA54D9CDCF2C33254C75D8611353</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2948D155FDEA4850825F43E52527AA4F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>744BDA42C38330C1E88ECA1FECBFE660</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6882D2F0604C8CDAB7781D9B6703BCC4</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>751EC57284D38045881B14C26938B6F4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AFURLSessionManager.h</string>
+			<key>path</key>
+			<string>AFNetworking/AFURLSessionManager.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>766D50114C46F27A9803204AC4FFCB65</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>ZZError.m</string>
+			<key>path</key>
+			<string>ZipZap/ZZError.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76E9FDC4275B558D3B1EEF205D02137E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DF63CEA6502CAFC8B0DC3F025BB7FACE</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Project</string>
+				</array>
+			</dict>
+		</dict>
+		<key>77AFFCD705ED6D600CB0C3AA3039CD9E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>ZZStandardDecryptInputStream.mm</string>
+			<key>path</key>
+			<string>ZipZap/ZZStandardDecryptInputStream.mm</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>78308A9B9CFCCEA328AF7E48F7EB47BB</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>580121DF22501D7F2F6C26240692AD7A</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY</key>
+				<string>-</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>EXECUTABLE_PREFIX</key>
+				<string>lib</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MACOSX_DEPLOYMENT_TARGET</key>
+				<string>10.11</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>macosx</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>799A0495CFA1B00DCB1680C20C5CE1C4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>ZZArchiveEntryWriter.h</string>
+			<key>path</key>
+			<string>ZipZap/ZZArchiveEntryWriter.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7A268B544E67AB4A6C6DD56D832795A8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>24BEAC8D05EEEE89AA7E2DE5E483293D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7A6EE86E97D5F70620B2414F3E626B95</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D3CDDAB69FD7E19C9CC1A8065BD2F782</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7DA58739CA331CD3D72C93253F7BF845</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2D3A496B707FABD8B9F82E863B561EC8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7DB346D0F39D3F0E887471402A8071AB</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>93A4A3777CF96A4AAC1D13BA6DCCEA73</string>
+				<string>029A70C52ECE4EEAA3E4A94413D30608</string>
+				<string>36B09FF87F8F0C4CCC1B6DEF37F1192C</string>
+				<string>A3F593EADD7B5715A6D446A81F46E77D</string>
+				<string>51D988238C3FB23BC4E6D7F713F035AC</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8010FDB6BB60E505E7992B338FB10034</key>
+		<dict>
+			<key>fileRef</key>
+			<string>EB991F15C1E33E57B4333C2735BF6050</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>836F301F519FA638939BC9182EE58B23</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D3CDDAB69FD7E19C9CC1A8065BD2F782</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>84DB86853A7FA510241AEFCDAA18CB4F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>ZZOldArchiveEntry.mm</string>
+			<key>path</key>
+			<string>ZipZap/ZZOldArchiveEntry.mm</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>863998BC1FAD5713BEFC0E138EF081C2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>zipzap-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>86D37920B9B6BD994FDD73A338D19883</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>ZZError.h</string>
+			<key>path</key>
+			<string>ZipZap/ZZError.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8959302EA824E04B43D6648605E77162</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C008C8EA3AE0899EC8B1F2762B351136</string>
+				<string>1A5F9A298C9C74EBE184AFACB1B5F32D</string>
+				<string>AD29536F83C92933FE4129FA610F924F</string>
+				<string>5FC171DFA0AEEA98BA5DCDD50C8CFDB7</string>
+				<string>EFA642EDF3947319B68C9DEE00571CF6</string>
+				<string>F9339985745B25652E550693916314FA</string>
+				<string>580121DF22501D7F2F6C26240692AD7A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-NeoNotesMacOS</string>
+			<key>path</key>
+			<string>Target Support Files/Pods-NeoNotesMacOS</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8968D5D965823F4CC4C2BCD88BBE9AAA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AFURLRequestSerialization.h</string>
+			<key>path</key>
+			<string>AFNetworking/AFURLRequestSerialization.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8A955D815B6C4E3D6F280DFE12E0D266</key>
+		<dict>
+			<key>fileRef</key>
+			<string>86D37920B9B6BD994FDD73A338D19883</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>8C221D26D53B79E867555434CBB25319</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>F2972C1C4391A8DAC690E66338E768D3</string>
+				<string>AEE9A30AE27F735C016C1052B8037D87</string>
+				<string>943B0E841BCF6F8764BDE61E88B6384D</string>
+				<string>CC749AC3BA2B4D4B0F1400CF3CCBDEE0</string>
+				<string>3455BE0F9A1389D9FEEDFB3753DC6404</string>
+				<string>EED4D75C88BE775C747FEB866A070A96</string>
+				<string>2C0E1B2717D5394E78AD7114040BF551</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>8C431AA47445D6BE67F2041B90D0B96B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>AFHTTPSessionManager.m</string>
+			<key>path</key>
+			<string>AFNetworking/AFHTTPSessionManager.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8DE65DD8B5A729FC1019E80B02D9423E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>7A6EE86E97D5F70620B2414F3E626B95</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>8F08751A8843F3E519DC654A7DE7B485</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>zipzap-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8F377EF0B7A53F1F4E732E1CF0553D2E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8968D5D965823F4CC4C2BCD88BBE9AAA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>8FE3C293DA2070975327152A5551E6D0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>42AFDF1B4791D8B80BF996EA2E852E94</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>91F5ED3040FC7981693D77BC1A1BFE8D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>ZZStandardCryptoEngine.cpp</string>
+			<key>path</key>
+			<string>ZipZap/ZZStandardCryptoEngine.cpp</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9313727C30A06F8A00724C4E563A419E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>AFNetworking</string>
+			<key>target</key>
+			<string>F1CD54B521C05F64664B50B361E42A34</string>
+			<key>targetProxy</key>
+			<string>D6FAEF77C93C2E47527A8232929C18A5</string>
+		</dict>
+		<key>93A4A3777CF96A4AAC1D13BA6DCCEA73</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>text.script.ruby</string>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>name</key>
+			<string>Podfile</string>
+			<key>path</key>
+			<string>../Podfile</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+			<key>xcLanguageSpecificationIdentifier</key>
+			<string>xcode.lang.ruby</string>
+		</dict>
+		<key>943B0E841BCF6F8764BDE61E88B6384D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>02463486A47413BC5E4B094BCAAF7086</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>988F511472E0F26434AB8DD4B82DFCE2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D1ADF03C0B3F356A4404FF41EF888364</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>995DF725626EF037E3EBE4B80A852FD6</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>zipzap</string>
+			<key>target</key>
+			<string>2ADD4EEA30D2C3C457E1202B7DFFB1D2</string>
+			<key>targetProxy</key>
+			<string>329071FA4A261510433A7EBD18FA5A3A</string>
+		</dict>
+		<key>9AA032ABD5B7960CEB502B2568FABE37</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6A29BD105042E34CDE4394654470359D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9E41A5873EA8F794F6034FA1F198902C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4421D761DB1BF1769348EB6E0E38EBEB</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Project</string>
+				</array>
+			</dict>
+		</dict>
+		<key>9FBB04DD0D1FCFED1F29C80BE745B0B7</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>ZZFileChannelOutput.m</string>
+			<key>path</key>
+			<string>ZipZap/ZZFileChannelOutput.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A3AA97583FBFAF9C758E014F0761B015</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AFNetworking-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A3F593EADD7B5715A6D446A81F46E77D</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>266A6107C1EA5A2F1FDE24411BF0B193</string>
+				<string>ABDC7CA0EDC7457E02F8637CF389253B</string>
+				<string>123D714B06A9CBCD93010579FDE498FB</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A41EE4477A8C31F557414CAD8AEDC039</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>147132EB8ECC0C9A2997455B4875B27A</string>
+				<string>744BDA42C38330C1E88ECA1FECBFE660</string>
+				<string>607E909A1FE0E95FBB7B2E7099262A47</string>
+				<string>0B570DE4FB41EE8963514154DE380813</string>
+				<string>8F377EF0B7A53F1F4E732E1CF0553D2E</string>
+				<string>01D310E2DAC58192E209FFA896339578</string>
+				<string>4CD3642B812E501998987D3455C4508C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>A4A6DF15376C495BD95BBAB5177F6458</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>ApplicationServices.framework</string>
+			<key>path</key>
+			<string>Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/ApplicationServices.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>ABDC7CA0EDC7457E02F8637CF389253B</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>libPods-NeoNotesMacOS.a</string>
+			<key>path</key>
+			<string>libPods-NeoNotesMacOS.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>AD29536F83C92933FE4129FA610F924F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-NeoNotesMacOS-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ADC67E7947A5923C3AD417FEA4675B36</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>ZZStoreOutputStream.h</string>
+			<key>path</key>
+			<string>ZipZap/ZZStoreOutputStream.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AEE9A30AE27F735C016C1052B8037D87</key>
+		<dict>
+			<key>fileRef</key>
+			<string>682443710BD1B0A6D75E70E4326F7073</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B22A98E163DCD583E397A3EF408B0C00</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>ZZDataChannelOutput.h</string>
+			<key>path</key>
+			<string>ZipZap/ZZDataChannelOutput.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B336304432A89128537BA8380CCE035B</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>5370102B29090FB0A7BC7C7D30900BB5</string>
+				<string>18AE3D978A27DDD69096D627DD577937</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>B3590D0DA45A422EFED0CBFC2EDC9F64</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6CE2AC0950328F91F5BA426B71D15EA6</string>
+				<string>02463486A47413BC5E4B094BCAAF7086</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Reachability</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B3F22AB6C15B2B64FB9DE40B8E86DE35</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>ZZNewArchiveEntry.h</string>
+			<key>path</key>
+			<string>ZipZap/ZZNewArchiveEntry.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B4F893594CE761FCA5127895F650F331</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>6543E171419518976DA87658177FE222</string>
+				<string>B688CAD1DBE08966C07200E871D09849</string>
+				<string>6A028252CF67B84592584BE4AF605FB0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>B5244EF8F1A2175BDAE752412A3EA4C4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>05333E5DB1910CD63F7B4727FEA3221B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B550EA12C166400B63E74BE77E1D984B</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>836F301F519FA638939BC9182EE58B23</string>
+				<string>7DA58739CA331CD3D72C93253F7BF845</string>
+				<string>ED94AB4EE1CCEBDFCA0B924DC61C700C</string>
+				<string>CBAB0B0CDFF8A4B276850AF1681CDF5F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>B599CCE85F34E4BAC4FE746DD55C61F8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E968BEF67559F9872923E5BFBB4D6274</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B688CAD1DBE08966C07200E871D09849</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D3CDDAB69FD7E19C9CC1A8065BD2F782</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B6FB2D2844093D34328A2801F39CDEB2</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>1DD068FAE272C435C00764C2F9B55B44</string>
+				<string>0D4FEF44381B3CD16EFE5F8CAC01311F</string>
+				<string>5C81DDCDDDAE209777390E55A55BE003</string>
+				<string>2EE3242ADF044EE5E78EDA413D62D080</string>
+				<string>2948D155FDEA4850825F43E52527AA4F</string>
+				<string>EB991F15C1E33E57B4333C2735BF6050</string>
+				<string>04B1C67CB1E97CB935404AD77645D208</string>
+				<string>799A0495CFA1B00DCB1680C20C5CE1C4</string>
+				<string>E17DAD87021D604DFC8518AF99932D9C</string>
+				<string>E6579534EE838F74D05CB5B893790B0C</string>
+				<string>D1ADF03C0B3F356A4404FF41EF888364</string>
+				<string>BD050572209AEEF15A9F7BC6DFD3C11F</string>
+				<string>F77870BAF5669F4E367368B2B05772C4</string>
+				<string>42AFDF1B4791D8B80BF996EA2E852E94</string>
+				<string>B22A98E163DCD583E397A3EF408B0C00</string>
+				<string>24BEAC8D05EEEE89AA7E2DE5E483293D</string>
+				<string>64DEBD90EBC5EE9FF4FAE6349C962972</string>
+				<string>04CFBDAF742D90B21C3816B91931FCC5</string>
+				<string>05333E5DB1910CD63F7B4727FEA3221B</string>
+				<string>86D37920B9B6BD994FDD73A338D19883</string>
+				<string>766D50114C46F27A9803204AC4FFCB65</string>
+				<string>3E6BA5C50F50DBC019F7B0FA8EAED28E</string>
+				<string>C3FC961F5ACE0CB89FE5D4A75AEDC512</string>
+				<string>EA1D7BA6F17F31F7D8C664D349B7F090</string>
+				<string>9FBB04DD0D1FCFED1F29C80BE745B0B7</string>
+				<string>546753FAB97E420C13A25A9825136603</string>
+				<string>DF63CEA6502CAFC8B0DC3F025BB7FACE</string>
+				<string>EE5107F477CDD094AD338E26F58258CD</string>
+				<string>B3F22AB6C15B2B64FB9DE40B8E86DE35</string>
+				<string>6A29BD105042E34CDE4394654470359D</string>
+				<string>38CF70D37A89B8A5FCCA21170DFC2D2B</string>
+				<string>E968BEF67559F9872923E5BFBB4D6274</string>
+				<string>66A2951C6C7C1B5D0CE175071C28BBF2</string>
+				<string>84DB86853A7FA510241AEFCDAA18CB4F</string>
+				<string>DF045AE781FF7F710F564EA7F6EA03A9</string>
+				<string>DF79EFCC1FC1807F9741C669410FEF09</string>
+				<string>3C39E918AE15E748321F1A3BF60A999B</string>
+				<string>91F5ED3040FC7981693D77BC1A1BFE8D</string>
+				<string>4421D761DB1BF1769348EB6E0E38EBEB</string>
+				<string>65570325708FA2B0D666551467F654CD</string>
+				<string>77AFFCD705ED6D600CB0C3AA3039CD9E</string>
+				<string>ADC67E7947A5923C3AD417FEA4675B36</string>
+				<string>6D7D87E22DE26947F565703746C6ED54</string>
+				<string>3DB842DAA6AC02ABB9BAFB896CA84554</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>zipzap</string>
+			<key>path</key>
+			<string>zipzap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B8339307D9EFBB333AE3ED1BE7374FC6</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>A4A6DF15376C495BD95BBAB5177F6458</string>
+				<string>D3CDDAB69FD7E19C9CC1A8065BD2F782</string>
+				<string>2D3A496B707FABD8B9F82E863B561EC8</string>
+				<string>42C47B4739F9D6F433145AA03E8F6F6D</string>
+				<string>C2BE44B71D095255339F9020B6538258</string>
+				<string>649A63C45903584BE8C2B20B86580629</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>OS X</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B89019758FA101B6D6E363FF621E7A35</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>F9339985745B25652E550693916314FA</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY</key>
+				<string>-</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>EXECUTABLE_PREFIX</key>
+				<string>lib</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MACOSX_DEPLOYMENT_TARGET</key>
+				<string>10.11</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>macosx</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>BD050572209AEEF15A9F7BC6DFD3C11F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>ZZConstants.m</string>
+			<key>path</key>
+			<string>ZipZap/ZZConstants.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C004038E9E72DAEFE3822D41BBBE3B3B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>766D50114C46F27A9803204AC4FFCB65</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C008C8EA3AE0899EC8B1F2762B351136</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-NeoNotesMacOS-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C2BE44B71D095255339F9020B6538258</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Security.framework</string>
+			<key>path</key>
+			<string>Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/Security.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>C2CE07D0890966C002BD201CA8C0B47B</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>4F7FE10E0260CF1F4F719C6694582FD3</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY</key>
+				<string>-</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>EXECUTABLE_PREFIX</key>
+				<string>lib</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/AFNetworking/AFNetworking-prefix.pch</string>
+				<key>MACOSX_DEPLOYMENT_TARGET</key>
+				<string>10.9</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PRIVATE_HEADERS_FOLDER_PATH</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string></string>
+				<key>SDKROOT</key>
+				<string>macosx</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>C38D4B8A8E930043AC724298306734D5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E17DAD87021D604DFC8518AF99932D9C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Project</string>
+				</array>
+			</dict>
+		</dict>
+		<key>C3C2C2B31A06D08A566F7C293A46BE8E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>EA1D7BA6F17F31F7D8C664D349B7F090</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Project</string>
+				</array>
+			</dict>
+		</dict>
+		<key>C3FC961F5ACE0CB89FE5D4A75AEDC512</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>ZZFileChannel.m</string>
+			<key>path</key>
+			<string>ZipZap/ZZFileChannel.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C6835030600D401B2CDBF1448CBF7115</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9FBB04DD0D1FCFED1F29C80BE745B0B7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C7A84D9741726977D5D6E318800A5C87</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5C81DDCDDDAE209777390E55A55BE003</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C7C75D53CBE8A82D2801ACED0AA84877</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>025421D1AFF6FD09C8E03AED8D1E752E</string>
+				<string>E8C785FED4FD8A90BF64A1BE523358A9</string>
+				<string>04BA6473631A9D7D1E6D128A83B8ACCE</string>
+				<string>8010FDB6BB60E505E7992B338FB10034</string>
+				<string>6E054AC0CE9C09C33F1FB6FE8C505E22</string>
+				<string>C38D4B8A8E930043AC724298306734D5</string>
+				<string>EE28D9EAD6509685C94A3023DBCB2E48</string>
+				<string>988F511472E0F26434AB8DD4B82DFCE2</string>
+				<string>4EB05AD2E2874880E490D06225739236</string>
+				<string>54213045D51151AFA7D3248403711E1E</string>
+				<string>E8708DDD61F4D29EAF5EF061553A33AC</string>
+				<string>DE25283F8959776F5783F515783F52A1</string>
+				<string>8A955D815B6C4E3D6F280DFE12E0D266</string>
+				<string>4B3F95E4D55C5C16B22A5178EC91459D</string>
+				<string>C3C2C2B31A06D08A566F7C293A46BE8E</string>
+				<string>01C9B3298A2E8DF723AFC673586C328F</string>
+				<string>76E9FDC4275B558D3B1EEF205D02137E</string>
+				<string>EC4C11D0ECA8054DA70856FBC6DF1BB6</string>
+				<string>611CEDEC87AFCE0A44D1F725A9C838AE</string>
+				<string>03D955205784E54B66FE1BF411E33C23</string>
+				<string>E0D4F695E188E794F41B14EF4A90ECFF</string>
+				<string>37449B6FBB37958107851B762C4084CF</string>
+				<string>9E41A5873EA8F794F6034FA1F198902C</string>
+				<string>4D4E5C7F9474353EC0D701837E73F707</string>
+				<string>29D938E5447383085EFC10AC8D246BAF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>CBAB0B0CDFF8A4B276850AF1681CDF5F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>649A63C45903584BE8C2B20B86580629</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CC749AC3BA2B4D4B0F1400CF3CCBDEE0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F51E9CAE8421ED8A7B675FD78C407245</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D1ADF03C0B3F356A4404FF41EF888364</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>ZZConstants.h</string>
+			<key>path</key>
+			<string>ZipZap/ZZConstants.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D2F5E152A4CA8FFC2F4CBC80CC8277A6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>BD050572209AEEF15A9F7BC6DFD3C11F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D3CDDAB69FD7E19C9CC1A8065BD2F782</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Cocoa.framework</string>
+			<key>path</key>
+			<string>Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/Cocoa.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>D41D8CD98F00B204E9800998ECF8427E</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastSwiftUpdateCheck</key>
+				<string>0730</string>
+				<key>LastUpgradeCheck</key>
+				<string>0700</string>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>2D8E8EC45A3A1A1D94AE762CB5028504</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>7DB346D0F39D3F0E887471402A8071AB</string>
+			<key>productRefGroup</key>
+			<string>A3F593EADD7B5715A6D446A81F46E77D</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>F1CD54B521C05F64664B50B361E42A34</string>
+				<string>F59F4ECE34F0C99652E501B9E591B9D3</string>
+				<string>2ADD4EEA30D2C3C457E1202B7DFFB1D2</string>
+			</array>
+		</dict>
+		<key>D6FAEF77C93C2E47527A8232929C18A5</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>F1CD54B521C05F64664B50B361E42A34</string>
+			<key>remoteInfo</key>
+			<string>AFNetworking</string>
+		</dict>
+		<key>DE25283F8959776F5783F515783F52A1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>04CFBDAF742D90B21C3816B91931FCC5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Project</string>
+				</array>
+			</dict>
+		</dict>
+		<key>DF045AE781FF7F710F564EA7F6EA03A9</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>ZZOldArchiveEntryWriter.h</string>
+			<key>path</key>
+			<string>ZipZap/ZZOldArchiveEntryWriter.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DF63CEA6502CAFC8B0DC3F025BB7FACE</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>ZZInflateInputStream.h</string>
+			<key>path</key>
+			<string>ZipZap/ZZInflateInputStream.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DF79EFCC1FC1807F9741C669410FEF09</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>ZZOldArchiveEntryWriter.mm</string>
+			<key>path</key>
+			<string>ZipZap/ZZOldArchiveEntryWriter.mm</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DF8C408F9BCF1288E8EDB494EA0A288B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>AFURLResponseSerialization.m</string>
+			<key>path</key>
+			<string>AFNetworking/AFURLResponseSerialization.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E0D4F695E188E794F41B14EF4A90ECFF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DF045AE781FF7F710F564EA7F6EA03A9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Project</string>
+				</array>
+			</dict>
+		</dict>
+		<key>E17DAD87021D604DFC8518AF99932D9C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>ZZChannel.h</string>
+			<key>path</key>
+			<string>ZipZap/ZZChannel.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E2A7037301B291AF9E6BD5AB13B7B7C7</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>8968D5D965823F4CC4C2BCD88BBE9AAA</string>
+				<string>181504AD3F3C5E6B75B13CA0F2B1EA24</string>
+				<string>3E32CF5FB30790EBCF1A53F4ACA35523</string>
+				<string>DF8C408F9BCF1288E8EDB494EA0A288B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Serialization</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E48C60E9C213595E3A0446043CA0F346</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6D7D87E22DE26947F565703746C6ED54</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E6579534EE838F74D05CB5B893790B0C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>ZZChannelOutput.h</string>
+			<key>path</key>
+			<string>ZipZap/ZZChannelOutput.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E8708DDD61F4D29EAF5EF061553A33AC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>64DEBD90EBC5EE9FF4FAE6349C962972</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Project</string>
+				</array>
+			</dict>
+		</dict>
+		<key>E8C785FED4FD8A90BF64A1BE523358A9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0D4FEF44381B3CD16EFE5F8CAC01311F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Project</string>
+				</array>
+			</dict>
+		</dict>
+		<key>E968BEF67559F9872923E5BFBB4D6274</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>ZZNewArchiveEntryWriter.mm</string>
+			<key>path</key>
+			<string>ZipZap/ZZNewArchiveEntryWriter.mm</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EA1D7BA6F17F31F7D8C664D349B7F090</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>ZZFileChannelOutput.h</string>
+			<key>path</key>
+			<string>ZipZap/ZZFileChannelOutput.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EB991F15C1E33E57B4333C2735BF6050</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>ZZArchiveEntry.h</string>
+			<key>path</key>
+			<string>ZipZap/ZZArchiveEntry.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EC4C11D0ECA8054DA70856FBC6DF1BB6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B3F22AB6C15B2B64FB9DE40B8E86DE35</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Project</string>
+				</array>
+			</dict>
+		</dict>
+		<key>ED94AB4EE1CCEBDFCA0B924DC61C700C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C2BE44B71D095255339F9020B6538258</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>EE28D9EAD6509685C94A3023DBCB2E48</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E6579534EE838F74D05CB5B893790B0C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Project</string>
+				</array>
+			</dict>
+		</dict>
+		<key>EE5107F477CDD094AD338E26F58258CD</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>ZZInflateInputStream.m</string>
+			<key>path</key>
+			<string>ZipZap/ZZInflateInputStream.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EED4D75C88BE775C747FEB866A070A96</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DF8C408F9BCF1288E8EDB494EA0A288B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>EFA642EDF3947319B68C9DEE00571CF6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-NeoNotesMacOS-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F08C97CDCC3D156238C32D3F3443EBB7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8F08751A8843F3E519DC654A7DE7B485</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F1CD54B521C05F64664B50B361E42A34</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>11319947230CC2946E2E04D50506BB0C</string>
+			<key>buildPhases</key>
+			<array>
+				<string>8C221D26D53B79E867555434CBB25319</string>
+				<string>B550EA12C166400B63E74BE77E1D984B</string>
+				<string>A41EE4477A8C31F557414CAD8AEDC039</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>AFNetworking</string>
+			<key>productName</key>
+			<string>AFNetworking</string>
+			<key>productReference</key>
+			<string>266A6107C1EA5A2F1FDE24411BF0B193</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
+		</dict>
+		<key>F1E85D0FC4E6E7F452B5263B58F98F82</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>B89019758FA101B6D6E363FF621E7A35</string>
+				<string>78308A9B9CFCCEA328AF7E48F7EB47BB</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>F2972C1C4391A8DAC690E66338E768D3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8C431AA47445D6BE67F2041B90D0B96B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F371CA8D58BCA9545788E4F52A79707C</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>F08C97CDCC3D156238C32D3F3443EBB7</string>
+				<string>C7A84D9741726977D5D6E318800A5C87</string>
+				<string>73F8BA54D9CDCF2C33254C75D8611353</string>
+				<string>32DE07215EBF43AB0B294E97B61062AD</string>
+				<string>D2F5E152A4CA8FFC2F4CBC80CC8277A6</string>
+				<string>8FE3C293DA2070975327152A5551E6D0</string>
+				<string>7A268B544E67AB4A6C6DD56D832795A8</string>
+				<string>B5244EF8F1A2175BDAE752412A3EA4C4</string>
+				<string>C004038E9E72DAEFE3822D41BBBE3B3B</string>
+				<string>0E71043C9AC1F2D9847A9E74D1D36FCC</string>
+				<string>C6835030600D401B2CDBF1448CBF7115</string>
+				<string>355DCF0BB2CF0EABCF7DE116E00BCBA5</string>
+				<string>9AA032ABD5B7960CEB502B2568FABE37</string>
+				<string>B599CCE85F34E4BAC4FE746DD55C61F8</string>
+				<string>27DFD73CAACE676E982CA2EFB50D4823</string>
+				<string>0F1165A72A71C1BE867F5C55574CE868</string>
+				<string>064388EBA18D6328D3B849EB01388ADE</string>
+				<string>01E834BA1D0201F54859F6BA464FAB95</string>
+				<string>E48C60E9C213595E3A0446043CA0F346</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>F51E9CAE8421ED8A7B675FD78C407245</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>AFSecurityPolicy.m</string>
+			<key>path</key>
+			<string>AFNetworking/AFSecurityPolicy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F59F4ECE34F0C99652E501B9E591B9D3</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>F1E85D0FC4E6E7F452B5263B58F98F82</string>
+			<key>buildPhases</key>
+			<array>
+				<string>0A2B83F9AB9FCA9025B56B8D3796D289</string>
+				<string>8DE65DD8B5A729FC1019E80B02D9423E</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>9313727C30A06F8A00724C4E563A419E</string>
+				<string>995DF725626EF037E3EBE4B80A852FD6</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-NeoNotesMacOS</string>
+			<key>productName</key>
+			<string>Pods-NeoNotesMacOS</string>
+			<key>productReference</key>
+			<string>ABDC7CA0EDC7457E02F8637CF389253B</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
+		</dict>
+		<key>F77870BAF5669F4E367368B2B05772C4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>ZZDataChannel.h</string>
+			<key>path</key>
+			<string>ZipZap/ZZDataChannel.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F7ED2DECE9F8A7152298193FC1F9F6D7</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AFHTTPSessionManager.h</string>
+			<key>path</key>
+			<string>AFNetworking/AFHTTPSessionManager.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F9339985745B25652E550693916314FA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-NeoNotesMacOS.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>D41D8CD98F00B204E9800998ECF8427E</string>
+</dict>
+</plist>

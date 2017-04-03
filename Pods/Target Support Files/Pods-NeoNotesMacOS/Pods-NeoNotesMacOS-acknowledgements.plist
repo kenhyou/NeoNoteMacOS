@@ -41,14 +41,6 @@ THE SOFTWARE.
 		</dict>
 		<dict>
 			<key>FooterText</key>
-			<string>INAppStoreWindow is licensed under the BSD license.</string>
-			<key>Title</key>
-			<string>INAppStoreWindow</string>
-			<key>Type</key>
-			<string>PSGroupSpecifier</string>
-		</dict>
-		<dict>
-			<key>FooterText</key>
 			<string>Copyright (c) 2012, Pixelglow Software.
 All rights reserved.
 
